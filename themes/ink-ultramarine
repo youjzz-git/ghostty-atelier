@@ -1,0 +1,27 @@
+# Ink · Ultramarine (dark) — the background is the ink that shaders/bleed.glsl
+# bleeds under the text; the window stays clear glass elsewhere. Pearl text,
+# cornflower, champagne, lily-leaf green, rose, lavender, emerald.
+background = #101d53
+foreground = #eaeaf0
+cursor-color = #f3d392
+cursor-text = #101d53
+selection-background = #365184
+selection-foreground = #eaeaf0
+split-divider-color = #546480
+
+palette = 0=#33476d
+palette = 1=#eb8186
+palette = 2=#9fcc95
+palette = 3=#eac984
+palette = 4=#8cb1f4
+palette = 5=#c2a5e5
+palette = 6=#7ed0be
+palette = 7=#cfd0d9
+palette = 8=#909cb2
+palette = 9=#fda0a3
+palette = 10=#bbe1b2
+palette = 11=#f8dfa4
+palette = 12=#afcbff
+palette = 13=#d9c2f6
+palette = 14=#a5e7d7
+palette = 15=#fafafd
