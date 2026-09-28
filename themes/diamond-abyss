@@ -1,0 +1,26 @@
+# Diamond · Abyss (dark) — deep-ocean navy glass; the shader drifts the hue
+# toward sea teal and indigo.
+background = #06203e
+foreground = #e6f3ff
+cursor-color = #eef8ff
+cursor-text = #06203e
+selection-background = #1d4f86
+selection-foreground = #ffffff
+split-divider-color = #5f8fbf
+
+palette = 0=#12345c
+palette = 1=#ff9aac
+palette = 2=#98eec2
+palette = 3=#fbe09e
+palette = 4=#96c8ff
+palette = 5=#d6b0ff
+palette = 6=#86ecf0
+palette = 7=#d6e6f2
+palette = 8=#8fa9c6
+palette = 9=#ffb8c6
+palette = 10=#b6f6d5
+palette = 11=#ffeec0
+palette = 12=#b6dcff
+palette = 13=#e8ccff
+palette = 14=#aaf6f8
+palette = 15=#f8fcff

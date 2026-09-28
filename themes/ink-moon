@@ -1,0 +1,30 @@
+# Ink · Moonlit mountains (水墨 · 远山)
+# An ink-wash landscape inverted for the dark: layered peaks fading into
+# mist, a moon, birds, a small boat and a red seal. Mineral-pigment colors.
+background-image = ~/.config/ghostty/backgrounds/ink.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0d1218
+foreground = #e9e4da
+cursor-color = #e6dec1
+cursor-text = #0d1218
+selection-background = #2c3947
+selection-foreground = #e9e4da
+split-divider-color = #3c434a
+
+palette = 0=#282f35
+palette = 1=#ee8c7c
+palette = 2=#75bc9d
+palette = 3=#c4a76b
+palette = 4=#7db1dd
+palette = 5=#d695ad
+palette = 6=#76b7c3
+palette = 7=#cad2db
+palette = 8=#727c86
+palette = 9=#feb1a3
+palette = 10=#9dd6bc
+palette = 11=#dcc493
+palette = 12=#a2cdf2
+palette = 13=#edb5ca
+palette = 14=#9dd2db
+palette = 15=#f0f6fc

@@ -1,0 +1,30 @@
+# Retro · Golden Reel (复古 · 留声机)
+# A 1930s Hollywood magazine cover in Art Deco: sunburst, premiere searchlights
+# over a picture palace, a brass gramophone playing a record, gold masthead, stepped frame.
+background-image = ~/.config/ghostty/backgrounds/gramophone.jpg
+background-image-fit = cover
+background-image-position = center
+background = #1b0e09
+foreground = #f1e7d2
+cursor-color = #e5ac4c
+cursor-text = #1b0e09
+selection-background = #57372b
+selection-foreground = #f1e7d2
+split-divider-color = #4f3e38
+
+palette = 0=#392a24
+palette = 1=#ea998b
+palette = 2=#82c38f
+palette = 3=#d1ab64
+palette = 4=#68bde4
+palette = 5=#e496b4
+palette = 6=#59c5bf
+palette = 7=#dacec8
+palette = 8=#907b71
+palette = 9=#febbaf
+palette = 10=#a9ddb2
+palette = 11=#e8c992
+palette = 12=#97d8f8
+palette = 13=#f9b9d0
+palette = 14=#8edfd9
+palette = 15=#fbf3ef

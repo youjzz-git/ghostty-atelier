@@ -1,0 +1,26 @@
+# Diamond · Ruby — ruby-rose glass; the shader drifts the hue toward violet
+# and crimson. Light pastel accents keep their contrast on the warm glass.
+background = #5c1650
+foreground = #fff2f6
+cursor-color = #fff5f8
+cursor-text = #5c1650
+selection-background = #a83a8a
+selection-foreground = #ffffff
+split-divider-color = #e08ab0
+
+palette = 0=#762a68
+palette = 1=#ffa6a0
+palette = 2=#a8f0c4
+palette = 3=#ffe0a0
+palette = 4=#a9ccff
+palette = 5=#ffb8e6
+palette = 6=#9ff0ec
+palette = 7=#f4e2ea
+palette = 8=#d8a9c0
+palette = 9=#ffc2bc
+palette = 10=#c6f7d9
+palette = 11=#fff0c8
+palette = 12=#c8deff
+palette = 13=#ffd2f0
+palette = 14=#bdf8f4
+palette = 15=#ffffff

@@ -1,0 +1,30 @@
+# Cartoon · Tea house (卡通 · 奶茶店)
+# A cozy milk-tea shop at night: pendant lamps, a chalkboard menu, a shelf of
+# jars and plants, a counter with boba tea, a latte, an espresso machine and a sleeping cat.
+background-image = ~/.config/ghostty/backgrounds/cafe.jpg
+background-image-fit = cover
+background-image-position = center
+background = #1d1109
+foreground = #f2eadd
+cursor-color = #f496bb
+cursor-text = #1d1109
+selection-background = #543c2f
+selection-foreground = #f2eadd
+split-divider-color = #504238
+
+palette = 0=#3b2d24
+palette = 1=#f19d9d
+palette = 2=#8fc990
+palette = 3=#d9b06b
+palette = 4=#74c2ee
+palette = 5=#eb9dbb
+palette = 6=#60ccc5
+palette = 7=#d9cfc8
+palette = 8=#8f7c6f
+palette = 9=#febebd
+palette = 10=#b1dfb1
+palette = 11=#edcc95
+palette = 12=#9ddafe
+palette = 13=#fcbcd4
+palette = 14=#91e2dc
+palette = 15=#fbf3ef

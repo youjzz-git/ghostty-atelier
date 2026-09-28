@@ -1,0 +1,26 @@
+# Diamond · Opal — iridescent violet glass; the shader drifts the hue toward
+# sapphire and rose. Pastel gem accents stay bright on the colored glass.
+background = #241c66
+foreground = #f5f2ff
+cursor-color = #fff6fd
+cursor-text = #241c66
+selection-background = #6a55c8
+selection-foreground = #ffffff
+split-divider-color = #9d8ee0
+
+palette = 0=#3a3180
+palette = 1=#ff9ab6
+palette = 2=#9ff0c9
+palette = 3=#ffe2a2
+palette = 4=#a4c8ff
+palette = 5=#e6b6ff
+palette = 6=#92f0f0
+palette = 7=#e4e0f7
+palette = 8=#b9b3e4
+palette = 9=#ffb9cc
+palette = 10=#c0f7dd
+palette = 11=#fff0c6
+palette = 12=#c2dbff
+palette = 13=#f0d2ff
+palette = 14=#b8f8f8
+palette = 15=#ffffff

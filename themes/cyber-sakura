@@ -1,0 +1,30 @@
+# Cyber · Neon sakura (赛博 · 霓虹樱)
+# A rainy night: a torii outlined in neon, glowing cherry branches,
+# drifting petals and a wet floor that mirrors the light.
+background-image = ~/.config/ghostty/backgrounds/sakura.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0f051d
+foreground = #f8eaf3
+cursor-color = #ff8dbc
+cursor-text = #0f051d
+selection-background = #4a2951
+selection-foreground = #f8eaf3
+split-divider-color = #3e3451
+
+palette = 0=#2a203b
+palette = 1=#fe949d
+palette = 2=#61d19a
+palette = 3=#d8b349
+palette = 4=#95b6fe
+palette = 5=#f294ca
+palette = 6=#1acfdf
+palette = 7=#d5ced7
+palette = 8=#947d99
+palette = 9=#ffbdc1
+palette = 10=#95e6bb
+palette = 11=#eacf83
+palette = 12=#bbd1ff
+palette = 13=#feb8df
+palette = 14=#79e4f0
+palette = 15=#f8f3f9

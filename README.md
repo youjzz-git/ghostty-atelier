@@ -1,118 +1,277 @@
-# 洇 · Ghostty ink bleed
+# Ghostty 画室 · Ghostty Atelier
 
-「洇」是墨落在湿纸上慢慢渗开的样子。
+中文 · [English](README.en.md)
 
-这是一套给 [Ghostty](https://ghostty.org) 用的 shader。终端窗口不再铺一整块底色，而是一块透明的玻璃，底色由文字自己晕出来：每一段字底下化开一片墨，形状跟着文字走，边缘有颜料沉淀的颗粒和一圈干掉的水线，彩色的字会把自己的颜色往墨里带一点。没有字的地方几乎完全透明，桌面壁纸原样露出来。所以屏幕上每一刻的构图都不一样，打字、滚屏的时候，墨也跟着字走。
+给 [Ghostty](https://ghostty.org) 做的一组主题，共 40 个。一部分靠 shader 把窗口变成水墨、宝石玻璃或者水彩纸，另一部分在终端背后放一幅画，风格有三渲二、故障、赛博、复古和卡通。所有背景图都是用代码一笔一笔画出来的，不是照片，也不是 AI 生成的图片。
 
-![预览](docs/hero.png)
+![cover](docs/cover.jpg)
 
-![文字出现时墨跟着晕开](docs/bleed.gif)
+## 目录
 
-预览里窗口后面是一张程序生成的天空图，换成你自己的壁纸效果更好。
-
-English summary is at the end.
+- [安装](#安装)
+- [全部主题一览](#全部主题一览)
+- Shader 主题：[洇 · 水墨晕开](#ink) · [钻石玻璃](#diamond) · [蜡笔水彩](#crayon)
+- 背景画主题：[静态画作](#paintings) · [三渲二](#toon) · [故障](#glitch) · [赛博](#cyber) · [复古](#retro) · [卡通](#cartoon)
+- [说明](#说明)
+- [仓库结构](#仓库结构)
+- [许可证](#许可证)
 
 ## 安装
 
 ```sh
-git clone https://github.com/youjzz-git/ghostty-ink-bleed.git
-cd ghostty-ink-bleed
-mkdir -p ~/.config/ghostty/shaders ~/.config/ghostty/themes
-cp shaders/*.glsl ~/.config/ghostty/shaders/
-cp themes/ink-ultramarine ~/.config/ghostty/themes/
+git clone https://github.com/youjzz-git/ghostty-atelier.git
+cd ghostty-atelier
+./install.sh
 ```
 
-然后在 `~/.config/ghostty/config` 里加上：
+`install.sh` 把 `themes/`、`shaders/` 和 `backgrounds/` 拷进 `~/.config/ghostty/` 下的同名目录，不会改动你的配置文件。同名文件会被覆盖，更新时再跑一遍就行。
+
+然后在 `~/.config/ghostty/config` 里选一个主题。背景画主题只需要两三行：
+
+```ini
+theme = toon-citadel
+background-opacity = 0.8
+background-opacity-cells = true
+```
+
+Shader 主题还要加上对应的 shader，每个系列下面都写了完整的配置。换到别的系列时，记得把上一套的 `custom-shader` 行删掉或注释掉，否则 shader 还会继续生效。
+
+改完按 `⌘⇧,` 重载配置。如果背景图或 shader 没有变化，新开一个窗口就能看到。
+
+## 全部主题一览
+
+| # | 主题 | 系列 | 需要的 shader | 背景图 | 推荐透明度 |
+|---|---|---|---|---|---|
+| 1 | [`ink-ultramarine`](#ink) | 洇 · 水墨晕开 | `bleed-measure.glsl` + `bleed-spread.glsl` + `bleed.glsl` | — | 0.8 |
+| 2 | [`diamond-opal`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 3 | [`diamond-ruby`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 4 | [`diamond-sapphire`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 5 | [`diamond-aqua`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 6 | [`diamond-amethyst`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 7 | [`diamond-garnet`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 8 | [`diamond-abyss`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 9 | [`diamond-tourmaline`](#diamond) | 钻石玻璃 | `diamond.glsl` | — | 0.8 |
+| 10 | [`crayon-peach`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 11 | [`crayon-lemon`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 12 | [`crayon-lilac`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 13 | [`crayon-seaside`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 14 | [`crayon-starry`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 15 | [`crayon-cocoa`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 16 | [`crayon-moss`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 17 | [`crayon-berry`](#crayon) | 蜡笔水彩 | `watercolor.glsl` | — | 0.85 |
+| 18 | [`paint-dusk`](#paintings) | 静态画作 | — | `dusk.jpg` | 0.97 |
+| 19 | [`crayon-night`](#paintings) | 静态画作 | — | `crayon.jpg` | 0.97 |
+| 20 | [`ink-moon`](#paintings) | 静态画作 | — | `ink.jpg` | 0.97 |
+| 21 | [`impression-dawn`](#paintings) | 静态画作 | — | `impression.jpg` | 0.97 |
+| 22 | [`toon-planet`](#toon) | 三渲二 | — | `toon.jpg` | 0.8 |
+| 23 | [`toon-koi`](#toon) | 三渲二 | — | `koi.jpg` | 0.8 |
+| 24 | [`toon-castle`](#toon) | 三渲二 | — | `castle.jpg` | 0.8 |
+| 25 | [`toon-citadel`](#toon) | 三渲二 | — | `citadel.jpg` | 0.8 |
+| 26 | [`glitch-signal`](#glitch) | 故障 | — | `glitch.jpg` | 0.8 |
+| 27 | [`glitch-peony`](#glitch) | 故障 | — | `peony.jpg` | 0.8 |
+| 28 | [`glitch-mirage`](#glitch) | 故障 | — | `mirage.jpg` | 0.8 |
+| 29 | [`glitch-eclipse`](#glitch) | 故障 | — | `eclipse.jpg` | 0.8 |
+| 30 | [`cyber-neon`](#cyber) | 赛博 | — | `cyber.jpg` | 0.8 |
+| 31 | [`cyber-sakura`](#cyber) | 赛博 | — | `sakura.jpg` | 0.8 |
+| 32 | [`cyber-skyrail`](#cyber) | 赛博 | — | `skyrail.jpg` | 0.8 |
+| 33 | [`retro-seventies`](#retro) | 复古 | — | `retro.jpg` | 0.8 |
+| 34 | [`retro-flowerpower`](#retro) | 复古 | — | `flowerpower.jpg` | 0.8 |
+| 35 | [`retro-steampunk`](#retro) | 复古 | — | `steampunk.jpg` | 0.8 |
+| 36 | [`retro-gramophone`](#retro) | 复古 | — | `gramophone.jpg` | 0.8 |
+| 37 | [`sticker-pop`](#cartoon) | 卡通 | — | `sticker.jpg` | 0.8 |
+| 38 | [`sticker-garden`](#cartoon) | 卡通 | — | `garden.jpg` | 0.8 |
+| 39 | [`cartoon-teahouse`](#cartoon) | 卡通 | — | `cafe.jpg` | 0.8 |
+| 40 | [`cartoon-laputa`](#cartoon) | 卡通 | — | `laputa.jpg` | 0.8 |
+
+<a id="ink"></a>
+
+## 洇 · 水墨晕开
+
+窗口是一块透明玻璃，底色由文字自己晕出来：每段字底下化开一片墨，边缘有颜料颗粒和一圈干掉的水线，没有字的地方几乎完全透明。原理、性能数据和可调参数见 [docs/ink-bleed.md](docs/ink-bleed.md)。
 
 ```ini
 theme = ink-ultramarine
 background-opacity = 0.8
+background-opacity-cells = true
 window-padding-x = 12
-
-# 三个 shader 缺一不可，顺序也不能换
 custom-shader = ~/.config/ghostty/shaders/bleed-measure.glsl
 custom-shader = ~/.config/ghostty/shaders/bleed-spread.glsl
 custom-shader = ~/.config/ghostty/shaders/bleed.glsl
 custom-shader-animation = false
 ```
 
-保存后按 `⌘⇧,` 重载配置。如果只改了 shader 文件的内容，重载后没有变化，新开一个窗口就能看到。
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/ink-ultramarine.jpg"><img src="docs/previews/ink-ultramarine.jpg" alt="ink-ultramarine"></a><br><code>ink-ultramarine</code><br>偏紫的群青墨，珍珠白文字，其他 ANSI 颜色取矢车菊蓝、香槟金、叶绿、玫瑰红、淡紫和祖母绿。</td><td width="50%"></td></tr>
+</table>
 
-`background-opacity` 必须小于 1。shader 靠透明度区分“字”和“背景”：背景像素的 alpha 等于这个值，字形像素是完全不透明的。设成 1 的话什么都认不出来。
+<a id="diamond"></a>
 
-## 它是怎么工作的
+## 钻石玻璃
 
-要知道“这里附近有没有字”，最直接的办法是让每个像素在自己周围一圈采样。第一版就是这么写的，每个像素采 96 个点，效果很好，但太费 GPU。问题出在 Ghostty 这边：1.3.1 版只要加载了 custom shader，窗口在前台时就会按屏幕刷新率一直重绘，ProMotion 屏上就是每秒 120 帧，`custom-shader-animation = false` 也关不掉。所以 shader 每一帧的开销都要乘以 120。
+整扇窗口是一块有颜色的宝石玻璃。色相像欧泊一样在相邻几种颜色之间缓慢流动，亮度保持不变，所以文字对比度处处一样；右上角有一点分光，边缘内侧有几处固定的高光。前四个明亮，后四个是对应的深色版。
 
-现在的做法是拆成三遍。先把窗口划成边长十几个像素的粗格子：
+```ini
+theme = diamond-opal
+background-opacity = 0.8
+background-opacity-cells = true
+custom-shader = ~/.config/ghostty/shaders/diamond.glsl
+custom-shader-animation = false
+```
 
-1. `bleed-measure.glsl` 统计每个格子里有多少“墨”（字形，或者和背景颜色不同的格子），以及这些墨的平均颜色。
-2. `bleed-spread.glsl` 在格子之间做一次高斯模糊，得到墨晕开之后每个格子的浓度。
-3. `bleed.glsl` 让每个像素从周围四个格子插值出浓度，决定这里是墨还是玻璃，然后上色。
+把 `theme` 换成下面任意一个名字即可，shader 不用变。
 
-格子的数据总得有地方放。Ghostty 的几个 shader 之间只传一张和窗口一样大的图，没有别的缓冲区可用。好在窗口左右两侧的 padding 里永远不会画字，所以前两遍把格子数据写进窗口左右最外侧各 12 个像素里，第三遍画完再把这两条恢复成背景色。这些像素挨在一起，GPU 可以成批处理，前两遍真正干活的只占全屏像素的百分之一左右。这也是为什么 `window-padding-x` 不能小于 12。
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/diamond-opal.jpg"><img src="docs/previews/diamond-opal.jpg" alt="diamond-opal"></a><br><code>diamond-opal</code><br>蛋白石紫，往蓝宝石和玫瑰色流动。</td><td width="50%" valign="top"><a href="docs/previews/diamond-ruby.jpg"><img src="docs/previews/diamond-ruby.jpg" alt="diamond-ruby"></a><br><code>diamond-ruby</code><br>红宝石玫瑰色，往紫罗兰和深红流动。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/diamond-sapphire.jpg"><img src="docs/previews/diamond-sapphire.jpg" alt="diamond-sapphire"></a><br><code>diamond-sapphire</code><br>宝蓝，往天青和靛蓝流动。</td><td width="50%" valign="top"><a href="docs/previews/diamond-aqua.jpg"><img src="docs/previews/diamond-aqua.jpg" alt="diamond-aqua"></a><br><code>diamond-aqua</code><br>海玻璃青，往薄荷绿和蓝宝石流动。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/diamond-amethyst.jpg"><img src="docs/previews/diamond-amethyst.jpg" alt="diamond-amethyst"></a><br><code>diamond-amethyst</code><br>深紫水晶，往靛蓝和梅子色流动。</td><td width="50%" valign="top"><a href="docs/previews/diamond-garnet.jpg"><img src="docs/previews/diamond-garnet.jpg" alt="diamond-garnet"></a><br><code>diamond-garnet</code><br>深酒红石榴石，Ruby 的深色版。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/diamond-abyss.jpg"><img src="docs/previews/diamond-abyss.jpg" alt="diamond-abyss"></a><br><code>diamond-abyss</code><br>深海藏青，往海青和靛蓝流动。</td><td width="50%" valign="top"><a href="docs/previews/diamond-tourmaline.jpg"><img src="docs/previews/diamond-tourmaline.jpg" alt="diamond-tourmaline"></a><br><code>diamond-tourmaline</code><br>深青碧玺，Aqua 的深色版。</td></tr>
+</table>
 
-上色的部分：主题的背景色就是墨色。墨在相邻的几个色相之间缓慢交替，亮度保持不变，所以不会影响文字的对比度。墨里叠了纸纹颗粒，靠近边缘的地方有一圈更深的水线，墨池边缘本身有一点随机起伏。附近的字如果是彩色的，墨会往那个颜色偏一点，比如蓝色链接底下偏蓝，黄色警告底下偏暖。字形本身、带背景色的格子、选区和图片都原样保留，不会被改动。
+<a id="crayon"></a>
 
-## 性能
+## 蜡笔水彩
 
-测试环境是 M2 Max，Ghostty 1.3.1，测试窗口 1488×1864 像素并保持在前台，数值是 Ghostty 进程占用 GPU 时间的比例，从 IOKit 里每个进程的 `accumulatedGPUTime` 算出来。“转圈”模拟的是命令行工具每秒刷新十次的加载动画，“满屏刷新”是不停地往终端里输出彩色文字。
+终端背景变成一张水彩纸。几片水彩从窗口边缘铺进来，颜料用的是主题自己的光标色、选区色和亮黄，干的时候在边缘积成一圈，沉进纸纹里；两道蜡笔线沿着对角画在边距里。中间留给文字。前四个是浅色纸，后四个是深色卡纸，颜料像粉彩一样浮在上面。
 
-| 配置 | 转圈 | 满屏刷新 |
-|---|---|---|
-| 不加 shader | 约 1% | 约 11% |
-| 只加一个什么都不做的 shader | 约 10% | — |
-| 初版：每个像素采样 96 个点 | 约 57% | 约 60% |
-| 现在的三遍版本 | 约 25–30% | 约 27–30% |
+```ini
+theme = crayon-peach
+background-opacity = 0.85
+background-opacity-cells = true
+custom-shader = ~/.config/ghostty/shaders/watercolor.glsl
+custom-shader-animation = false
+```
 
-第二行说明 Ghostty 的持续重绘本身就有固定开销，这部分和 shader 写得怎样无关。窗口越大、屏幕上的字越多，开销越高，全屏窗口大概是上表的两倍。笔记本用电池的时候可以留意一下。
+把 `theme` 换成下面任意一个名字即可，shader 不用变。
 
-## 可调参数
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/crayon-peach.jpg"><img src="docs/previews/crayon-peach.jpg" alt="crayon-peach"></a><br><code>crayon-peach</code><br>奶油色纸，桃色和玫瑰色水彩，珊瑚色蜡笔。</td><td width="50%" valign="top"><a href="docs/previews/crayon-lemon.jpg"><img src="docs/previews/crayon-lemon.jpg" alt="crayon-lemon"></a><br><code>crayon-lemon</code><br>黄油色纸，柠檬和薄荷水彩，万寿菊色蜡笔。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/crayon-lilac.jpg"><img src="docs/previews/crayon-lilac.jpg" alt="crayon-lilac"></a><br><code>crayon-lilac</code><br>薰衣草色纸，丁香紫和长春花蓝水彩。</td><td width="50%" valign="top"><a href="docs/previews/crayon-seaside.jpg"><img src="docs/previews/crayon-seaside.jpg" alt="crayon-seaside"></a><br><code>crayon-seaside</code><br>海盐白纸，天蓝和水绿水彩。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/crayon-starry.jpg"><img src="docs/previews/crayon-starry.jpg" alt="crayon-starry"></a><br><code>crayon-starry</code><br>靛蓝夜色卡纸，柠檬黄的星星蜡笔，蓝色晕染。</td><td width="50%" valign="top"><a href="docs/previews/crayon-cocoa.jpg"><img src="docs/previews/crayon-cocoa.jpg" alt="crayon-cocoa"></a><br><code>crayon-cocoa</code><br>暖色牛皮纸，杏色和玫瑰色粉彩。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/crayon-moss.jpg"><img src="docs/previews/crayon-moss.jpg" alt="crayon-moss"></a><br><code>crayon-moss</code><br>深苔绿卡纸，青柠和鼠尾草色粉彩。</td><td width="50%" valign="top"><a href="docs/previews/crayon-berry.jpg"><img src="docs/previews/crayon-berry.jpg" alt="crayon-berry"></a><br><code>crayon-berry</code><br>梅子色卡纸，粉色和丁香紫粉彩。</td></tr>
+</table>
 
-参数都写在 shader 文件开头的常量里，改完新开一个窗口生效。
+<a id="paintings"></a>
 
-| 常量 | 所在文件 | 默认值 | 作用 |
-|---|---|---|---|
-| `REACH` | bleed-spread | 36.0 | 墨能晕出文字多远，单位是点 |
-| `INK_OPACITY` | bleed | 0.88 | 墨池里的不透明度 |
-| `GLASS_OPACITY` | bleed | 0.10 | 没有字的地方的不透明度，设成 0 就完全透明 |
-| `EDGE_LINE` | bleed | 1.0 | 墨池边缘那圈深色水线的强度 |
-| `WORD_COLOR` | bleed | 1.0 | 墨从彩色文字那里借颜色的程度 |
-| `HUE_DRIFT` | bleed | 0.06 | 墨在相邻色相之间交替的幅度，单位是圈 |
-| `BRUSH` | bleed | 1.0 | 把 palette 8 的高亮底色画成一笔淡墨，设成 0 就保留原样 |
-| `STRIP` | 三个文件 | 12 | 用来存数据的边缘宽度，单位是像素，三个文件要一致 |
-| `DEVICE_SCALE` | bleed-spread、bleed | 2.0 | 每个点对应几个像素，Retina 屏是 2 |
+## 静态画作
 
-## 换一种墨色
+四幅完整的画作放在终端背后。画面细节多，透明度太低时会被壁纸搅浑，所以推荐 0.95 以上。
 
-墨色就是主题的 `background`。`themes/ink-ultramarine` 是一种偏紫的群青，配珍珠白的文字，其他 ANSI 颜色取了矢车菊蓝、香槟金、叶绿、玫瑰红、淡紫和祖母绿，都调得比较柔和，在深色墨上够亮，又不刺眼。
+```ini
+theme = paint-dusk
+background-opacity = 0.97
+background-opacity-cells = true
+```
 
-换成别的主题也可以用，只要背景是深色，`background-opacity` 小于 1。背景色换成墨黑、赭石或者深绿，就是另一种墨。
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/paint-dusk.jpg"><img src="docs/previews/paint-dusk.jpg" alt="paint-dusk"></a><br><code>paint-dusk</code><br>板绘 · 黄昏云海：动画背景画法的蓝调天空，云底被最后一点夕阳照亮，底部一道暗色山脊。</td><td width="50%" valign="top"><a href="docs/previews/crayon-night.jpg"><img src="docs/previews/crayon-night.jpg" alt="crayon-night"></a><br><code>crayon-night</code><br>蜡笔 · 星夜：深蓝卡纸上的蜡笔画，月亮、星星、旋转的夜空、排线的山丘、几棵棒棒糖树和一扇亮灯的窗。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/ink-moon.jpg"><img src="docs/previews/ink-moon.jpg" alt="ink-moon"></a><br><code>ink-moon</code><br>水墨 · 远山：反转成暗色的水墨山水，远山层层隐进雾里，一轮月、几只鸟、一叶小舟和一方朱印。</td><td width="50%" valign="top"><a href="docs/previews/impression-dawn.jpg"><img src="docs/previews/impression-dawn.jpg" alt="impression-dawn"></a><br><code>impression-dawn</code><br>印象 · 日出：仿莫奈笔触的清晨港口，灰蓝雾气里一轮橙色太阳和它的倒影，几条小船。</td></tr>
+</table>
 
-## 配合 Claude Code
+<a id="toon"></a>
 
-Claude Code 的 `dark-ansi` 主题会用 ANSI 的 bright black（也就是 palette 8）给用户自己发的消息铺一层灰底。`BRUSH` 打开时，`bleed.glsl` 会认出这种底色，把灰块重新画成一笔比周围稍亮的淡墨，带横向的笔刷纹理，两头和上下边缘是干笔飞白。其他程序里用 palette 8 做背景色的地方也会得到同样的处理。
+## 三渲二
 
-识别时有个细节：Ghostty 画带背景色的格子时，会先铺窗口背景，再叠上格子的颜色，两层都用 `background-opacity`，所以画出来的颜色是 palette 8 混了大约六分之一的背景色，alpha 大约是 0.95。shader 里是按这个实际颜色来匹配的。
+像动画赛璐璐那样上色：每块形体只有平涂的暗面、亮面和一道硬边光。
 
-## 限制
+```ini
+theme = toon-planet
+background-opacity = 0.8
+background-opacity-cells = true
+```
 
-目前只在 macOS 上的 Ghostty 1.3.1 测试过，Linux 没有试。
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/toon-planet.jpg"><img src="docs/previews/toon-planet.jpg" alt="toon-planet"></a><br><code>toon-planet</code><br>带环的行星和卫星，硬边光带、青色边缘光、阴影里的漫画网点、粗描边。</td><td width="50%" valign="top"><a href="docs/previews/toon-koi.jpg"><img src="docs/previews/toon-koi.jpg" alt="toon-koi"></a><br><code>toon-koi</code><br>俯视的夜间池塘，锦鲤、睡莲叶和莲花，影子落在池底，水纹和飘落的花瓣。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/toon-castle.jpg"><img src="docs/previews/toon-castle.jpg" alt="toon-castle"></a><br><code>toon-castle</code><br>黄昏时湖心岩岛上的城堡，圆塔尖顶、陡峭屋顶、暖色窗灯，湖面倒映着一切。</td><td width="50%" valign="top"><a href="docs/previews/toon-citadel.jpg"><img src="docs/previews/toon-citadel.jpg" alt="toon-citadel"></a><br><code>toon-citadel</code><br>峭壁高墙上的哥特王城，落日藏在主塔背后：平涂明暗、金色硬边光、光束、赛璐璐云层、深渊里的雾。</td></tr>
+</table>
 
-墨迹检测把所有和背景色不同的像素都当成“字”，所以带大块背景色的界面，比如 htop 的色条、vim 的状态栏，也会被墨包住。这通常看起来没问题，但它们的色块本身不会变成墨。
+<a id="glitch"></a>
 
-`DEVICE_SCALE` 按 Retina 屏设成 2。在非 Retina 的外接显示器上，纸纹和晕染范围会显得大一倍，功能不受影响。数据存储条只占 12 个像素，1 倍屏上 12pt 的 padding 刚好放得下。
+## 故障
 
-分屏时，每个分屏各自算各自的墨。
+定格的数字故障。画面都放在右侧和下方，左边留给文字。
 
-## English
+```ini
+theme = glitch-signal
+background-opacity = 0.8
+background-opacity-cells = true
+```
 
-**洇 (yīn)** is the way ink spreads into wet paper. This is a set of three Ghostty shaders that turn the terminal into clear glass and let the text paint its own background: every passage sits in a pool of watercolor that bleeds out from the letters, follows their shape, granulates, dries into a darker rim and picks up a little of the color of the words inside it. Where there is no text the window stays almost fully transparent.
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/glitch-signal.jpg"><img src="docs/previews/glitch-signal.jpg" alt="glitch-signal"></a><br><code>glitch-signal</code><br>撕裂的文字、分离的色彩通道、像素排序拖影、压缩色块和扫描线。</td><td width="50%" valign="top"><a href="docs/previews/glitch-peony.jpg"><img src="docs/previews/glitch-peony.jpg" alt="glitch-peony"></a><br><code>glitch-peony</code><br>一朵被损坏的牡丹：像素排序的滴落、横向错位的切片、错开的色彩通道。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/glitch-mirage.jpg"><img src="docs/previews/glitch-mirage.jpg" alt="glitch-mirage"></a><br><code>glitch-mirage</code><br>蒸汽波配色的低多边形山峦和静水，整行排成光带，马赛克块，少量色差。</td><td width="50%" valign="top"><a href="docs/previews/glitch-eclipse.jpg"><img src="docs/previews/glitch-eclipse.jpg" alt="glitch-eclipse"></a><br><code>glitch-eclipse</code><br>边缘锐利的黑日和白热日冕，被切成几片横向错开，只用红青两色错位，配像素块和 HUD 小字，没有任何模糊。</td></tr>
+</table>
 
-Install by copying `shaders/*.glsl` to `~/.config/ghostty/shaders/` and `themes/ink-ultramarine` to `~/.config/ghostty/themes/`, then add the config shown above. All three `custom-shader` lines are required, in that order. `background-opacity` must be below 1 and `window-padding-x` at least 12.
+<a id="cyber"></a>
 
-Ghostty 1.3.1 redraws every frame while any custom shader is loaded, so the bleed is computed on a coarse grid whose data is kept in the outermost 12 pixels of the side padding, then interpolated at every pixel. Tested only with Ghostty 1.3.1 on macOS.
+## 赛博
+
+霓虹、雨夜和城市。
+
+```ini
+theme = cyber-neon
+background-opacity = 0.8
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/cyber-neon.jpg"><img src="docs/previews/cyber-neon.jpg" alt="cyber-neon"></a><br><code>cyber-neon</code><br>夜间天际线，霓虹描边和竖排招牌，透视网格地面，四角的 HUD 框和准星。</td><td width="50%" valign="top"><a href="docs/previews/cyber-sakura.jpg"><img src="docs/previews/cyber-sakura.jpg" alt="cyber-sakura"></a><br><code>cyber-sakura</code><br>雨夜里霓虹勾勒的鸟居、发光的樱花枝和飘落的花瓣，湿地面倒映着灯光。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/cyber-skyrail.jpg"><img src="docs/previews/cyber-skyrail.jpg" alt="cyber-skyrail"></a><br><code>cyber-skyrail</code><br>坐在夜间空轨车厢里看对面的车窗：窗外是下雨的霓虹城和低垂的月亮，另一条线的列车驶过，头顶有线路屏和吊环。</td><td width="50%"></td></tr>
+</table>
+
+<a id="retro"></a>
+
+## 复古
+
+旧印刷品的质感：有限的几种油墨、网点、纸张颗粒和一点套色错位。
+
+```ini
+theme = retro-seventies
+background-opacity = 0.8
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/retro-seventies.jpg"><img src="docs/previews/retro-seventies.jpg" alt="retro-seventies"></a><br><code>retro-seventies</code><br>七十年代海报：拱形条纹、切片太阳、星光和网点，印在深棕色纸上。</td><td width="50%" valign="top"><a href="docs/previews/retro-flowerpower.jpg"><img src="docs/previews/retro-flowerpower.jpg" alt="retro-flowerpower"></a><br><code>retro-flowerpower</code><br>七十年代印花：圆瓣大雏菊和波浪条纹。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/retro-steampunk.jpg"><img src="docs/previews/retro-steampunk.jpg" alt="retro-steampunk"></a><br><code>retro-steampunk</code><br>深褐底上的黄铜和紫铜机械：咬合的齿轮、压力表、带法兰的铜管和阀门轮、一缕蒸汽、淡淡的工程图。</td><td width="50%" valign="top"><a href="docs/previews/retro-gramophone.jpg"><img src="docs/previews/retro-gramophone.jpg" alt="retro-gramophone"></a><br><code>retro-gramophone</code><br>装饰艺术风的 1930 年代好莱坞杂志封面：放射背景、影院首映的探照灯、黄铜喇叭留声机、金色报头和阶梯边框。</td></tr>
+</table>
+
+<a id="cartoon"></a>
+
+## 卡通
+
+轻松可爱的一组。
+
+```ini
+theme = sticker-pop
+background-opacity = 0.8
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/sticker-pop.jpg"><img src="docs/previews/sticker-pop.jpg" alt="sticker-pop"></a><br><code>sticker-pop</code><br>深色波点底，四角和右侧贴满模切白边的卡通贴纸。</td><td width="50%" valign="top"><a href="docs/previews/sticker-garden.jpg"><img src="docs/previews/sticker-garden.jpg" alt="sticker-garden"></a><br><code>sticker-garden</code><br>同样的波点底，贴的是花园主题的贴纸。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/cartoon-teahouse.jpg"><img src="docs/previews/cartoon-teahouse.jpg" alt="cartoon-teahouse"></a><br><code>cartoon-teahouse</code><br>夜里的奶茶店：吊灯、黑板菜单、摆着罐子和绿植的架子，柜台上有珍珠奶茶、拿铁、咖啡机和一只睡着的猫。</td><td width="50%" valign="top"><a href="docs/previews/cartoon-laputa.jpg"><img src="docs/previews/cartoon-laputa.jpg" alt="cartoon-laputa"></a><br><code>cartoon-laputa</code><br>蓝调时刻，吉卜力背景画的感觉：积雨云还留着最后一点光，前面浮着长着大树的空中之城，瀑布和根须垂下来，下面是云海。</td></tr>
+</table>
+
+## 说明
+
+预览图都是真实的 Ghostty 窗口截图，透明度按各系列推荐的值设置，窗口后面垫的是一张程序生成的天空图。实际用的时候透出来的是你自己的桌面壁纸。
+
+背景画主题靠 Ghostty 的 `background-image`，需要 1.2 或更新的版本。图片按 `cover` 方式铺满窗口并居中，窗口比例不同时两边会被裁掉一些。画面的主体大多放在右侧和下方，左上角尽量留给文字。
+
+加载了任何 custom shader 之后，Ghostty 1.3.1 会在窗口处于前台时按屏幕刷新率持续重绘，所以 shader 主题比背景画主题更费 GPU。具体数字可以看 [洇的性能测试](docs/ink-bleed.md#性能)。
+
+目前只在 macOS 上的 Ghostty 1.3.1 测试过。shader 按 Retina 屏写死了每点两个像素，在 1 倍屏上纹理会显得粗一倍，功能不受影响。
+
+## 仓库结构
+
+```
+themes/        主题文件，40 个
+shaders/       bleed-measure / bleed-spread / bleed（洇）、diamond（钻石玻璃）、watercolor（蜡笔水彩）
+backgrounds/   背景画主题用到的图片，3024×1964
+docs/          预览图、封面，以及洇的详细说明
+install.sh     安装脚本
+```
 
 ## 许可证
 
-MIT
+MIT。代码、主题和背景图都适用。

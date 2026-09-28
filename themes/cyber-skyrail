@@ -1,0 +1,30 @@
+# Cyber · Sky rail (赛博 · 空轨)
+# Inside a sky-rail car at night: wide windows onto a rainy neon city and a
+# low moon, the other line's train sliding past, a route display, hand straps, the bench.
+background-image = ~/.config/ghostty/backgrounds/skyrail.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0c061e
+foreground = #f0ecfa
+cursor-color = #40e2f3
+cursor-text = #0c061e
+selection-background = #4a2951
+selection-foreground = #f0ecfa
+split-divider-color = #3a3653
+
+palette = 0=#26223d
+palette = 1=#fe93a4
+palette = 2=#61d19a
+palette = 3=#e3ad4b
+palette = 4=#95b6fe
+palette = 5=#f594c3
+palette = 6=#1acfdf
+palette = 7=#d2cfda
+palette = 8=#8a80a0
+palette = 9=#febdc6
+palette = 10=#95e6bb
+palette = 11=#f4ca84
+palette = 12=#bbd1ff
+palette = 13=#febad9
+palette = 14=#79e4f0
+palette = 15=#f6f4fb

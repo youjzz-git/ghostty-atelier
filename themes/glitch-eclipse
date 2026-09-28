@@ -1,0 +1,30 @@
+# Glitch · Black sun (故障 · 黑日)
+# A crisp black sun with a white-hot corona, cut into clean slices that slip
+# sideways with red/cyan channel splits, pixel-exact data blocks, HUD type. Nothing blurred.
+background-image = ~/.config/ghostty/backgrounds/eclipse.jpg
+background-image-fit = cover
+background-image-position = center
+background = #08090c
+foreground = #eceff2
+cursor-color = #f8495f
+cursor-text = #08090c
+selection-background = #2e3545
+selection-foreground = #eceff2
+split-divider-color = #36383c
+
+palette = 0=#222428
+palette = 1=#fe949d
+palette = 2=#6fd087
+palette = 3=#d3b63b
+palette = 4=#86bafe
+palette = 5=#f691cc
+palette = 6=#0acee6
+palette = 7=#ccd1db
+palette = 8=#7a808d
+palette = 9=#ffbdc1
+palette = 10=#9ce6ab
+palette = 11=#e7d17a
+palette = 12=#b3d4ff
+palette = 13=#feb8df
+palette = 14=#6ee5f9
+palette = 15=#f2f5fc

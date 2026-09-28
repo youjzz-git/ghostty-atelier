@@ -1,0 +1,30 @@
+# Glitch · Digital peony (故障 · 数码牡丹)
+# A full peony corrupted: pixel-sorted drips, slices knocked sideways,
+# color channels out of register, scanlines.
+background-image = ~/.config/ghostty/backgrounds/peony.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0a080d
+foreground = #f0e9ec
+cursor-color = #fa7ba7
+cursor-text = #0a080d
+selection-background = #462836
+selection-foreground = #f0e9ec
+split-divider-color = #39373c
+
+palette = 0=#252328
+palette = 1=#ff92a4
+palette = 2=#6fd087
+palette = 3=#d3b63b
+palette = 4=#86bafe
+palette = 5=#f990c4
+palette = 6=#07d0d8
+palette = 7=#d7ced6
+palette = 8=#877c86
+palette = 9=#febdc6
+palette = 10=#9ce6ab
+palette = 11=#e7d17a
+palette = 12=#b3d4ff
+palette = 13=#febad9
+palette = 14=#6ce7ed
+palette = 15=#f9f3f8

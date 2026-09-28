@@ -1,0 +1,25 @@
+# Crayon · Starry (dark) — indigo night paper, lemon-star crayon, blue washes.
+background = #1b1d40
+foreground = #e5e7f5
+cursor-color = #f2d76c
+cursor-text = #1b1d40
+selection-background = #454482
+selection-foreground = #e5e7f5
+split-divider-color = #515686
+
+palette = 0=#32365f
+palette = 1=#fea09d
+palette = 2=#8ed28f
+palette = 3=#e9b364
+palette = 4=#95c0ff
+palette = 5=#e8a2e1
+palette = 6=#4dd4db
+palette = 7=#d4d6e5
+palette = 8=#82849b
+palette = 9=#ffc8c5
+palette = 10=#b5e7b5
+palette = 11=#f9d098
+palette = 12=#c0d9ff
+palette = 13=#f8c4f2
+palette = 14=#91e9ee
+palette = 15=#f9fafe

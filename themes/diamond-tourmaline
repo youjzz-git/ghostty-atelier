@@ -1,0 +1,26 @@
+# Diamond · Tourmaline (dark) — deep teal-tourmaline glass, the dark twin of
+# Aqua; the shader drifts the hue toward sea green and blue.
+background = #032a36
+foreground = #e8fbff
+cursor-color = #effdff
+cursor-text = #032a36
+selection-background = #145a6a
+selection-foreground = #ffffff
+split-divider-color = #5aa2ae
+
+palette = 0=#0f4150
+palette = 1=#ff9fae
+palette = 2=#9ef2c6
+palette = 3=#fce2a0
+palette = 4=#9cd0ff
+palette = 5=#dab6ff
+palette = 6=#84f0ec
+palette = 7=#d4eef2
+palette = 8=#8db8c0
+palette = 9=#ffbcc8
+palette = 10=#baf8d8
+palette = 11=#ffefc2
+palette = 12=#bce0ff
+palette = 13=#eaceff
+palette = 14=#a8f8f4
+palette = 15=#f6feff

@@ -1,0 +1,26 @@
+# Diamond · Garnet (dark) — deep wine-garnet glass, the dark twin of Ruby; the
+# shader drifts the hue toward plum and crimson.
+background = #2e0a2a
+foreground = #fdeef4
+cursor-color = #fff3f8
+cursor-text = #2e0a2a
+selection-background = #6a2360
+selection-foreground = #ffffff
+split-divider-color = #a8628f
+
+palette = 0=#47183f
+palette = 1=#ff9aa8
+palette = 2=#9ceec2
+palette = 3=#fcdc9c
+palette = 4=#a3c6ff
+palette = 5=#f8b0e2
+palette = 6=#95ecea
+palette = 7=#eedde6
+palette = 8=#b893aa
+palette = 9=#ffb7c2
+palette = 10=#bdf5d6
+palette = 11=#ffecbe
+palette = 12=#c2d9ff
+palette = 13=#fdcdef
+palette = 14=#b6f6f4
+palette = 15=#fff8fb

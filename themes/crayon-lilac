@@ -1,0 +1,25 @@
+# Crayon · Lilac — lavender paper with lilac and periwinkle washes.
+background = #f6f0ff
+foreground = #3f3852
+cursor-color = #ab7acd
+cursor-text = #3f3852
+selection-background = #c0d0f9
+selection-foreground = #3f3852
+split-divider-color = #c8bfdb
+
+palette = 0=#3f3a4b
+palette = 1=#ab4043
+palette = 2=#2e7c35
+palette = 3=#a36e09
+palette = 4=#2a61b1
+palette = 5=#93408e
+palette = 6=#017b80
+palette = 7=#e0dbea
+palette = 8=#777184
+palette = 9=#d15b5c
+palette = 10=#479c4d
+palette = 11=#d0901e
+palette = 12=#4f83d0
+palette = 13=#b161ab
+palette = 14=#219ba1
+palette = 15=#fdfdfe

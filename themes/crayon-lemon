@@ -1,0 +1,25 @@
+# Crayon · Lemon — butter paper with lemon and mint washes, a marigold crayon.
+background = #fbf8e2
+foreground = #3e3f29
+cursor-color = #e2a520
+cursor-text = #3e3f29
+selection-background = #b0e6c8
+selection-foreground = #3e3f29
+split-divider-color = #cac5a8
+
+palette = 0=#413e2b
+palette = 1=#ab4043
+palette = 2=#2e7c35
+palette = 3=#a36e09
+palette = 4=#2a61b1
+palette = 5=#93408e
+palette = 6=#017b80
+palette = 7=#e1dfd0
+palette = 8=#787561
+palette = 9=#d15b5c
+palette = 10=#479c4d
+palette = 11=#d0901e
+palette = 12=#4f83d0
+palette = 13=#b161ab
+palette = 14=#219ba1
+palette = 15=#fefefa

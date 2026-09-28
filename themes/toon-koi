@@ -1,0 +1,30 @@
+# Toon · Koi pond (三渲二 · 锦鲤池)
+# A dark pond seen from above: koi, lily pads and lotus shaded like anime
+# cels, their shadows on the pond floor, ripples and drifting petals.
+background-image = ~/.config/ghostty/backgrounds/koi.jpg
+background-image-fit = cover
+background-image-position = center
+background = #00171d
+foreground = #e7f1f1
+cursor-color = #fe9b61
+cursor-text = #00171d
+selection-background = #18444d
+selection-foreground = #e7f1f1
+split-divider-color = #2f4a51
+
+palette = 0=#1a353b
+palette = 1=#f99f90
+palette = 2=#85cf95
+palette = 3=#dbb563
+palette = 4=#6ec6f7
+palette = 5=#f09dc4
+palette = 6=#53d1d0
+palette = 7=#c7d4d7
+palette = 8=#65878f
+palette = 9=#fec4ba
+palette = 10=#afe4b9
+palette = 11=#edd198
+palette = 12=#a5ddfe
+palette = 13=#febfdc
+palette = 14=#93e5e4
+palette = 15=#eef7f9

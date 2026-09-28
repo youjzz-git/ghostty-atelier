@@ -1,0 +1,30 @@
+# Paint · Dusk (板绘 · 黄昏云海)
+# Blue-hour sky painted in the manner of anime backgrounds: indigo above,
+# clouds lit from below by the last of the sunset, a dark ridge along the bottom.
+background-image = ~/.config/ghostty/backgrounds/dusk.jpg
+background-image-fit = cover
+background-image-position = center
+background = #181535
+foreground = #ece9f2
+cursor-color = #f7b385
+cursor-text = #181535
+selection-background = #4a4069
+selection-foreground = #ece9f2
+split-divider-color = #4a486d
+
+palette = 0=#353356
+palette = 1=#ea9799
+palette = 2=#82c38f
+palette = 3=#dfa360
+palette = 4=#98aef1
+palette = 5=#cf9cd7
+palette = 6=#57c3cf
+palette = 7=#d0cfda
+palette = 8=#7f7aa2
+palette = 9=#feb9ba
+palette = 10=#a9ddb2
+palette = 11=#f5c38f
+palette = 12=#bbccfe
+palette = 13=#e7bded
+palette = 14=#8ddde7
+palette = 15=#f5f4fc

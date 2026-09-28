@@ -1,0 +1,30 @@
+# Toon · Royal citadel (三渲二 · 王城)
+# A gothic royal citadel on sheer walls, the low sun hidden behind its keep:
+# flat cel planes, hard gold rims, god rays, cel-lit cloud banks, mist in the chasm.
+background-image = ~/.config/ghostty/backgrounds/citadel.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0c0e1c
+foreground = #f0eae0
+cursor-color = #f6c16b
+cursor-text = #0c0e1c
+selection-background = #373c52
+selection-foreground = #f0eae0
+split-divider-color = #3b3f50
+
+palette = 0=#272a3a
+palette = 1=#f19e9b
+palette = 2=#88ca95
+palette = 3=#d9b06b
+palette = 4=#8cbaf7
+palette = 5=#dca0d6
+palette = 6=#5ecad6
+palette = 7=#ced0db
+palette = 8=#7b7f93
+palette = 9=#fec3c0
+palette = 10=#afe4b9
+palette = 11=#f0cf98
+palette = 12=#b8d7fe
+palette = 13=#f3c2ee
+palette = 14=#93e4ed
+palette = 15=#f3f5fc

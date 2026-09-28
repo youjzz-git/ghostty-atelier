@@ -1,0 +1,25 @@
+# Crayon · Seaside — pale sea-salt paper with sky and aqua washes.
+background = #eaf9fd
+foreground = #264052
+cursor-color = #45a4d0
+cursor-text = #264052
+selection-background = #ade5d7
+selection-foreground = #264052
+split-divider-color = #a9cad8
+
+palette = 0=#2c4149
+palette = 1=#ab4043
+palette = 2=#2e7c35
+palette = 3=#a36e09
+palette = 4=#2a61b1
+palette = 5=#93408e
+palette = 6=#017b80
+palette = 7=#d1e1e8
+palette = 8=#627982
+palette = 9=#d15b5c
+palette = 10=#479c4d
+palette = 11=#d0901e
+palette = 12=#4f83d0
+palette = 13=#b161ab
+palette = 14=#219ba1
+palette = 15=#fbfeff

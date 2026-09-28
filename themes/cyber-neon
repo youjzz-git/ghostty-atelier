@@ -1,0 +1,30 @@
+# Cyber · Neon HUD (赛博)
+# Night skyline with neon rims and vertical signs, a perspective grid floor,
+# HUD brackets and a reticle in the corners. Works from background-opacity 0.8 up.
+background-image = ~/.config/ghostty/backgrounds/cyber.jpg
+background-image-fit = cover
+background-image-position = center
+background = #080420
+foreground = #e1f2f8
+cursor-color = #49eaf2
+cursor-text = #080420
+selection-background = #402b5f
+selection-foreground = #e1f2f8
+split-divider-color = #353356
+
+palette = 0=#211f40
+palette = 1=#ff8fb4
+palette = 2=#6fd087
+palette = 3=#d3b63b
+palette = 4=#65c1fe
+palette = 5=#ee94db
+palette = 6=#07d0d8
+palette = 7=#d0d0db
+palette = 8=#8281a9
+palette = 9=#febccf
+palette = 10=#9ce6ab
+palette = 11=#e7d17a
+palette = 12=#a4d8fe
+palette = 13=#feb6ee
+palette = 14=#6ce7ed
+palette = 15=#f4f4fc

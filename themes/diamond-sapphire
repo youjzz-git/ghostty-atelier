@@ -1,0 +1,26 @@
+# Diamond · Sapphire — royal-blue glass; the shader drifts the hue toward
+# cerulean and indigo. Light pastel accents on the deep blue glass.
+background = #16307e
+foreground = #f2f6ff
+cursor-color = #f6f9ff
+cursor-text = #16307e
+selection-background = #3a5fc8
+selection-foreground = #ffffff
+split-divider-color = #8ea8ec
+
+palette = 0=#244090
+palette = 1=#ffa3b8
+palette = 2=#a6f2cc
+palette = 3=#ffe3a2
+palette = 4=#a8ceff
+palette = 5=#e4b8ff
+palette = 6=#94f0f2
+palette = 7=#e0e8fa
+palette = 8=#adbde6
+palette = 9=#ffc0ce
+palette = 10=#c4f8dd
+palette = 11=#fff0c6
+palette = 12=#c8e0ff
+palette = 13=#efd4ff
+palette = 14=#bafaf8
+palette = 15=#ffffff

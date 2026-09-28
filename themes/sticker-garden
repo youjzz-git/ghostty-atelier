@@ -1,0 +1,30 @@
+# Cartoon · Garden stickers (卡通 · 花园贴纸)
+# Cute garden stickers with die-cut borders around the corners and the
+# right edge of a dark polka-dot background.
+background-image = ~/.config/ghostty/backgrounds/garden.jpg
+background-image-fit = cover
+background-image-position = center
+background = #12132c
+foreground = #f4f2ea
+cursor-color = #fe9ac2
+cursor-text = #12132c
+selection-background = #3b3e67
+selection-foreground = #f4f2ea
+split-divider-color = #424562
+
+palette = 0=#2e304c
+palette = 1=#ffa09c
+palette = 2=#83d494
+palette = 3=#e8b45e
+palette = 4=#9ebdff
+palette = 5=#e2a3ec
+palette = 6=#44d4e2
+palette = 7=#cfd0db
+palette = 8=#8083a4
+palette = 9=#fec8c5
+palette = 10=#ade9b8
+palette = 11=#f8d193
+palette = 12=#c5d8ff
+palette = 13=#f4c4fb
+palette = 14=#8ce9f4
+palette = 15=#f3f4fc

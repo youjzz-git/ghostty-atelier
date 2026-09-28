@@ -1,0 +1,30 @@
+# Glitch · Signal lost (故障)
+# Frozen glitch art on the right: torn type, split color channels,
+# pixel-sort streaks, compression blocks, scanlines. The left stays calm.
+background-image = ~/.config/ghostty/backgrounds/glitch.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0b0b0f
+foreground = #e9ebee
+cursor-color = #27e7f9
+cursor-text = #0b0b0f
+selection-background = #302f4b
+selection-foreground = #e9ebee
+split-divider-color = #3a3a40
+
+palette = 0=#26262b
+palette = 1=#fe91ac
+palette = 2=#8ccc66
+palette = 3=#c6bc33
+palette = 4=#7cbdff
+palette = 5=#fa8ecd
+palette = 6=#0dcfdf
+palette = 7=#d0d0db
+palette = 8=#7f7f8c
+palette = 9=#febcca
+palette = 10=#afe392
+palette = 11=#ddd674
+palette = 12=#afd5fe
+palette = 13=#feb8df
+palette = 14=#5de8f6
+palette = 15=#f4f4fc

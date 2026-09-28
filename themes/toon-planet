@@ -1,0 +1,30 @@
+# Toon · Ringed planet (三渲二)
+# A ringed planet and a moon shaded like anime cels: hard light bands,
+# a cyan rim light, manga halftone in the shadows, heavy outlines.
+background-image = ~/.config/ghostty/backgrounds/toon.jpg
+background-image-fit = cover
+background-image-position = center
+background = #07162c
+foreground = #ecf3f8
+cursor-color = #fac871
+cursor-text = #07162c
+selection-background = #2a4367
+selection-foreground = #ecf3f8
+split-divider-color = #374863
+
+palette = 0=#22334c
+palette = 1=#fda19a
+palette = 2=#89d298
+palette = 3=#deb866
+palette = 4=#80c5ff
+palette = 5=#d3aaf3
+palette = 6=#56d3da
+palette = 7=#cbd1db
+palette = 8=#7487a5
+palette = 9=#fec8c3
+palette = 10=#b2e7bc
+palette = 11=#f0d49b
+palette = 12=#b6ddfe
+palette = 13=#e7caff
+palette = 14=#96e8ec
+palette = 15=#f1f5fc

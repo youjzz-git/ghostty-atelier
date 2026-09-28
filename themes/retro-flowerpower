@@ -1,0 +1,30 @@
+# Retro · Flower power (复古 · 花之力)
+# A 1970s print: big round-petaled daisies and groovy wavy stripes on
+# dark brown stock, with grain, halftone and misregistered inks.
+background-image = ~/.config/ghostty/backgrounds/flowerpower.jpg
+background-image-fit = cover
+background-image-position = center
+background = #1d140d
+foreground = #f1e7d2
+cursor-color = #eca851
+cursor-text = #1d140d
+selection-background = #583a2a
+selection-foreground = #f1e7d2
+split-divider-color = #51453e
+
+palette = 0=#3b3029
+palette = 1=#e89b80
+palette = 2=#9cbe7a
+palette = 3=#d3aa64
+palette = 4=#59c2d4
+palette = 5=#e297ba
+palette = 6=#5cc6b9
+palette = 7=#d9cfc7
+palette = 8=#8e7c6f
+palette = 9=#fcbda7
+palette = 10=#bdd9a2
+palette = 11=#eac992
+palette = 12=#8dddeb
+palette = 13=#f7b9d5
+palette = 14=#90dfd4
+palette = 15=#faf4ef

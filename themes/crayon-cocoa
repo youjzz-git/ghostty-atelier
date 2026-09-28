@@ -1,0 +1,25 @@
+# Crayon · Cocoa (dark) — warm kraft paper with apricot and rose pastel.
+background = #372419
+foreground = #f2e6d6
+cursor-color = #f5ab77
+cursor-text = #372419
+selection-background = #6f4141
+selection-foreground = #f2e6d6
+split-divider-color = #775d4e
+
+palette = 0=#533d30
+palette = 1=#fea09d
+palette = 2=#8ed28f
+palette = 3=#e9b364
+palette = 4=#95c0ff
+palette = 5=#e8a2e1
+palette = 6=#4dd4db
+palette = 7=#e2d5cb
+palette = 8=#978271
+palette = 9=#ffc8c5
+palette = 10=#b5e7b5
+palette = 11=#f9d098
+palette = 12=#c0d9ff
+palette = 13=#f8c4f2
+palette = 14=#91e9ee
+palette = 15=#fef9f5

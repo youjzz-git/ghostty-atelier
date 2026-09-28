@@ -1,0 +1,26 @@
+# Diamond · Aqua — clear sea-glass teal; the shader drifts the hue toward
+# mint and sapphire. Fresh pastel accents on the cool glass.
+background = #0a4460
+foreground = #f0fdff
+cursor-color = #f4fffd
+cursor-text = #0a4460
+selection-background = #1f7f8f
+selection-foreground = #ffffff
+split-divider-color = #7fc4cc
+
+palette = 0=#195a73
+palette = 1=#ffa3b1
+palette = 2=#aaf5c4
+palette = 3=#ffe7a6
+palette = 4=#a6d4ff
+palette = 5=#e2bcff
+palette = 6=#8ff7ec
+palette = 7=#dcf1f4
+palette = 8=#a2cdd4
+palette = 9=#ffbfca
+palette = 10=#c6fad8
+palette = 11=#fff2c8
+palette = 12=#c6e3ff
+palette = 13=#efd6ff
+palette = 14=#b8fbf4
+palette = 15=#ffffff

@@ -1,0 +1,25 @@
+# Crayon · Peach — cream paper with peach and rose washes, a coral crayon.
+background = #fef3e7
+foreground = #4d372f
+cursor-color = #e28061
+cursor-text = #4d372f
+selection-background = #f9c5ca
+selection-foreground = #4d372f
+split-divider-color = #dbbdae
+
+palette = 0=#4a392f
+palette = 1=#ab4043
+palette = 2=#2e7c35
+palette = 3=#a36e09
+palette = 4=#2a61b1
+palette = 5=#93408e
+palette = 6=#017b80
+palette = 7=#eadbd3
+palette = 8=#847065
+palette = 9=#d15b5c
+palette = 10=#479c4d
+palette = 11=#d0901e
+palette = 12=#4f83d0
+palette = 13=#b161ab
+palette = 14=#219ba1
+palette = 15=#fefdfd

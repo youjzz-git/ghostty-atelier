@@ -1,0 +1,25 @@
+# Crayon · Berry (dark) — plum paper with pink and lilac pastel.
+background = #351428
+foreground = #f6e6ed
+cursor-color = #fb9dc2
+cursor-text = #351428
+selection-background = #643f70
+selection-foreground = #f6e6ed
+split-divider-color = #784a64
+
+palette = 0=#532c42
+palette = 1=#fea09d
+palette = 2=#8ed28f
+palette = 3=#e9b364
+palette = 4=#95c0ff
+palette = 5=#e8a2e1
+palette = 6=#4dd4db
+palette = 7=#e1d3dc
+palette = 8=#957e8d
+palette = 9=#ffc8c5
+palette = 10=#b5e7b5
+palette = 11=#f9d098
+palette = 12=#c0d9ff
+palette = 13=#f8c4f2
+palette = 14=#91e9ee
+palette = 15=#fef8fc

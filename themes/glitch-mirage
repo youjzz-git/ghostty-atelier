@@ -1,0 +1,30 @@
+# Glitch · Mirage (故障 · 蜃景)
+# Low-poly mountains over a still lake in vaporwave colors, gently corrupted:
+# rows sorted into streaks of light, mosaic blocks, a little chromatic aberration.
+background-image = ~/.config/ghostty/backgrounds/mirage.jpg
+background-image-fit = cover
+background-image-position = center
+background = #11062b
+foreground = #f0ecf7
+cursor-color = #43d5dc
+cursor-text = #11062b
+selection-background = #443261
+selection-foreground = #f0ecf7
+split-divider-color = #3f3962
+
+palette = 0=#2b244b
+palette = 1=#fb93b4
+palette = 2=#56d1a3
+palette = 3=#d8b349
+palette = 4=#8eb8fe
+palette = 5=#dc9beb
+palette = 6=#17d0d8
+palette = 7=#d1cfda
+palette = 8=#8881a2
+palette = 9=#febccf
+palette = 10=#8fe6c1
+palette = 11=#eacf83
+palette = 12=#b7d2fe
+palette = 13=#efbcfa
+palette = 14=#79e5eb
+palette = 15=#f5f4fb

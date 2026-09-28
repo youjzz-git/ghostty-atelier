@@ -1,0 +1,30 @@
+# Toon · Lakeside castle (三渲二 · 城堡)
+# A castle on a rocky island at dusk, shaded like anime cels: round towers
+# with conical roofs, a steep hall with dormers, warm windows, a lake that mirrors it all.
+background-image = ~/.config/ghostty/backgrounds/castle.jpg
+background-image-fit = cover
+background-image-position = center
+background = #121130
+foreground = #ebeef7
+cursor-color = #f7c97b
+cursor-text = #121130
+selection-background = #363e6c
+selection-foreground = #ebeef7
+split-divider-color = #414468
+
+palette = 0=#2d2f51
+palette = 1=#f99d9d
+palette = 2=#77d0a2
+palette = 3=#dbb563
+palette = 4=#83c0ff
+palette = 5=#daa3e7
+palette = 6=#55cee1
+palette = 7=#ced0db
+palette = 8=#7d84a5
+palette = 9=#fec3c2
+palette = 10=#a6e5c2
+palette = 11=#edd198
+palette = 12=#b4d8ff
+palette = 13=#ecc4f5
+palette = 14=#94e3f1
+palette = 15=#f3f5fc

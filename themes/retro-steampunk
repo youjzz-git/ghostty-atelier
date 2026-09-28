@@ -1,0 +1,30 @@
+# Retro · Steampunk (复古 · 蒸汽朋克)
+# Brass and copper machinery on dark sepia: meshing gears, a pressure gauge,
+# copper pipes with flanges and a valve wheel, a wisp of steam, faint engineering drawings.
+background-image = ~/.config/ghostty/backgrounds/steampunk.jpg
+background-image-fit = cover
+background-image-position = center
+background = #160d07
+foreground = #efe3cf
+cursor-color = #e0ae57
+cursor-text = #160d07
+selection-background = #4e3829
+selection-foreground = #efe3cf
+split-divider-color = #483d36
+
+palette = 0=#332922
+palette = 1=#e99a86
+palette = 2=#69c6a7
+palette = 3=#ceac64
+palette = 4=#68bde4
+palette = 5=#e996a2
+palette = 6=#5cc6b9
+palette = 7=#d9cfc7
+palette = 8=#8e7c6f
+palette = 9=#fdbcab
+palette = 10=#98dfc6
+palette = 11=#e6ca91
+palette = 12=#97d8f8
+palette = 13=#fdb9c2
+palette = 14=#90dfd4
+palette = 15=#faf4ef

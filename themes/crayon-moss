@@ -1,0 +1,25 @@
+# Crayon · Moss (dark) — deep moss paper with lime and sage pastel.
+background = #15291d
+foreground = #e7ead8
+cursor-color = #cde079
+cursor-text = #15291d
+selection-background = #285b4c
+selection-foreground = #e7ead8
+split-divider-color = #4b6553
+
+palette = 0=#2d4334
+palette = 1=#fea09d
+palette = 2=#8ed28f
+palette = 3=#e9b364
+palette = 4=#95c0ff
+palette = 5=#e8a2e1
+palette = 6=#4dd4db
+palette = 7=#d1dbcf
+palette = 8=#7b8c78
+palette = 9=#ffc8c5
+palette = 10=#b5e7b5
+palette = 11=#f9d098
+palette = 12=#c0d9ff
+palette = 13=#f8c4f2
+palette = 14=#91e9ee
+palette = 15=#f7fbf6

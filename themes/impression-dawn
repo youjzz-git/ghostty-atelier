@@ -1,0 +1,30 @@
+# Impression · Dawn (印象 · 日出)
+# A harbor at dawn in broken brushwork after Monet: blue-gray haze, an
+# orange sun and its reflection, dark boats with rowers.
+background-image = ~/.config/ghostty/backgrounds/impression.jpg
+background-image-fit = cover
+background-image-position = center
+background = #102635
+foreground = #efeae2
+cursor-color = #fc9252
+cursor-text = #102635
+selection-background = #2b4c5f
+selection-foreground = #efeae2
+split-divider-color = #445b6c
+
+palette = 0=#2e4556
+palette = 1=#fb947b
+palette = 2=#85c692
+palette = 3=#e1a862
+palette = 4=#71bfeb
+palette = 5=#d1a0dc
+palette = 6=#5bc8c8
+palette = 7=#c8d3da
+palette = 8=#698595
+palette = 9=#fec0b0
+palette = 10=#ace0b6
+palette = 11=#f7c791
+palette = 12=#9ddafe
+palette = 13=#e9c1f2
+palette = 14=#90e2e1
+palette = 15=#eff6fb

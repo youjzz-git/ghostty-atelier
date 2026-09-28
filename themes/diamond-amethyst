@@ -1,0 +1,26 @@
+# Diamond · Amethyst (dark) — deep royal-purple glass; the shader drifts the
+# hue toward indigo and plum.
+background = #1f0c3c
+foreground = #efe8ff
+cursor-color = #f6f0ff
+cursor-text = #1f0c3c
+selection-background = #4e2c8c
+selection-foreground = #ffffff
+split-divider-color = #7d62b8
+
+palette = 0=#33205a
+palette = 1=#ff94b0
+palette = 2=#97ecc4
+palette = 3=#fbdc9c
+palette = 4=#9dc2ff
+palette = 5=#dcaaff
+palette = 6=#8eeaea
+palette = 7=#ddd6f2
+palette = 8=#9c90c4
+palette = 9=#ffb3c7
+palette = 10=#b8f4d6
+palette = 11=#ffecbd
+palette = 12=#bcd6ff
+palette = 13=#eac8ff
+palette = 14=#b0f4f4
+palette = 15=#fbf8ff

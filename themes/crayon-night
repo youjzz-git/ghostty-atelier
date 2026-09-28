@@ -1,0 +1,30 @@
+# Crayon · Starry night (蜡笔 · 星夜)
+# A crayon drawing on navy construction paper: moon, stars, sky swirls,
+# hatched hills, a few lollipop trees and a house with a lit window.
+background-image = ~/.config/ghostty/backgrounds/crayon.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0f1836
+foreground = #f4eee0
+cursor-color = #f5de87
+cursor-text = #0f1836
+selection-background = #324068
+selection-foreground = #f4eee0
+split-divider-color = #3f4c6e
+
+palette = 0=#2b3657
+palette = 1=#f09da6
+palette = 2=#88ca95
+palette = 3=#ceb66a
+palette = 4=#85bcf5
+palette = 5=#e39ecc
+palette = 6=#5ecbcb
+palette = 7=#cdd1db
+palette = 8=#7986a5
+palette = 9=#ffc2c8
+palette = 10=#afe4b9
+palette = 11=#e7d398
+palette = 12=#b4d8ff
+palette = 13=#f9c0e5
+palette = 14=#93e5e4
+palette = 15=#f2f5fc
