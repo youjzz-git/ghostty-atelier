@@ -2,7 +2,7 @@
 
 中文 · [English](README.en.md)
 
-给 [Ghostty](https://ghostty.org) 做的一组主题，共 40 个。一部分靠 shader 把窗口变成水墨、宝石玻璃或者水彩纸，另一部分在终端背后放一幅画，风格有三渲二、故障、赛博、复古和卡通。所有背景图都是用代码一笔一笔画出来的，不是照片，也不是 AI 生成的图片。
+给 [Ghostty](https://ghostty.org) 做的一组主题，共 49 个。一部分靠 shader 把窗口变成水墨、宝石玻璃或者水彩纸，另一部分在终端背后放一幅画，风格有三渲二、故障、赛博、复古和卡通；还有一组透明主题，画只占一部分，其余是玻璃，让你的桌面壁纸也成为画面的一部分。所有背景图都是用代码一笔一笔画出来的，不是照片，也不是 AI 生成的图片。
 
 ![cover](docs/cover.jpg)
 
@@ -12,6 +12,7 @@
 - [全部主题一览](#全部主题一览)
 - Shader 主题：[洇 · 水墨晕开](#ink) · [钻石玻璃](#diamond) · [蜡笔水彩](#crayon)
 - 背景画主题：[静态画作](#paintings) · [三渲二](#toon) · [故障](#glitch) · [赛博](#cyber) · [复古](#retro) · [卡通](#cartoon)
+- 透明主题：[透明玻璃](#glass) · [蕾丝](#lace)
 - [说明](#说明)
 - [仓库结构](#仓库结构)
 - [许可证](#许可证)
@@ -34,7 +35,7 @@ background-opacity = 0.8
 background-opacity-cells = true
 ```
 
-Shader 主题还要加上对应的 shader，每个系列下面都写了完整的配置。换到别的系列时，记得把上一套的 `custom-shader` 行删掉或注释掉，否则 shader 还会继续生效。
+Shader 主题还要加上对应的 shader，透明主题要把 `background-opacity` 改成 0.5，每个系列下面都写了完整的配置。换到别的系列时，记得把上一套的 `custom-shader` 行删掉或注释掉，否则 shader 还会继续生效。
 
 改完按 `⌘⇧,` 重载配置。如果背景图或 shader 没有变化，新开一个窗口就能看到。
 
@@ -63,25 +64,34 @@ Shader 主题还要加上对应的 shader，每个系列下面都写了完整的
 | 19 | [`crayon-night`](#paintings) | 静态画作 | — | `crayon.jpg` | 0.97 |
 | 20 | [`ink-moon`](#paintings) | 静态画作 | — | `ink.jpg` | 0.97 |
 | 21 | [`impression-dawn`](#paintings) | 静态画作 | — | `impression.jpg` | 0.97 |
-| 22 | [`toon-planet`](#toon) | 三渲二 | — | `toon.jpg` | 0.8 |
-| 23 | [`toon-koi`](#toon) | 三渲二 | — | `koi.jpg` | 0.8 |
-| 24 | [`toon-castle`](#toon) | 三渲二 | — | `castle.jpg` | 0.8 |
-| 25 | [`toon-citadel`](#toon) | 三渲二 | — | `citadel.jpg` | 0.8 |
-| 26 | [`glitch-signal`](#glitch) | 故障 | — | `glitch.jpg` | 0.8 |
-| 27 | [`glitch-peony`](#glitch) | 故障 | — | `peony.jpg` | 0.8 |
-| 28 | [`glitch-mirage`](#glitch) | 故障 | — | `mirage.jpg` | 0.8 |
-| 29 | [`glitch-eclipse`](#glitch) | 故障 | — | `eclipse.jpg` | 0.8 |
-| 30 | [`cyber-neon`](#cyber) | 赛博 | — | `cyber.jpg` | 0.8 |
-| 31 | [`cyber-sakura`](#cyber) | 赛博 | — | `sakura.jpg` | 0.8 |
-| 32 | [`cyber-skyrail`](#cyber) | 赛博 | — | `skyrail.jpg` | 0.8 |
-| 33 | [`retro-seventies`](#retro) | 复古 | — | `retro.jpg` | 0.8 |
-| 34 | [`retro-flowerpower`](#retro) | 复古 | — | `flowerpower.jpg` | 0.8 |
-| 35 | [`retro-steampunk`](#retro) | 复古 | — | `steampunk.jpg` | 0.8 |
-| 36 | [`retro-gramophone`](#retro) | 复古 | — | `gramophone.jpg` | 0.8 |
-| 37 | [`sticker-pop`](#cartoon) | 卡通 | — | `sticker.jpg` | 0.8 |
-| 38 | [`sticker-garden`](#cartoon) | 卡通 | — | `garden.jpg` | 0.8 |
-| 39 | [`cartoon-teahouse`](#cartoon) | 卡通 | — | `cafe.jpg` | 0.8 |
-| 40 | [`cartoon-laputa`](#cartoon) | 卡通 | — | `laputa.jpg` | 0.8 |
+| 22 | [`scroll-qingming`](#paintings) | 静态画作 | — | `qingming.jpg` | 0.97 |
+| 23 | [`toon-planet`](#toon) | 三渲二 | — | `toon.jpg` | 0.8 |
+| 24 | [`toon-koi`](#toon) | 三渲二 | — | `koi.jpg` | 0.8 |
+| 25 | [`toon-castle`](#toon) | 三渲二 | — | `castle.jpg` | 0.8 |
+| 26 | [`toon-citadel`](#toon) | 三渲二 | — | `citadel.jpg` | 0.8 |
+| 27 | [`toon-leyndell`](#toon) | 三渲二 | — | `leyndell.jpg` | 0.8 |
+| 28 | [`glitch-signal`](#glitch) | 故障 | — | `glitch.jpg` | 0.8 |
+| 29 | [`glitch-peony`](#glitch) | 故障 | — | `peony.jpg` | 0.8 |
+| 30 | [`glitch-mirage`](#glitch) | 故障 | — | `mirage.jpg` | 0.8 |
+| 31 | [`glitch-eclipse`](#glitch) | 故障 | — | `eclipse.jpg` | 0.8 |
+| 32 | [`cyber-neon`](#cyber) | 赛博 | — | `cyber.jpg` | 0.8 |
+| 33 | [`cyber-sakura`](#cyber) | 赛博 | — | `sakura.jpg` | 0.8 |
+| 34 | [`cyber-skyrail`](#cyber) | 赛博 | — | `skyrail.jpg` | 0.8 |
+| 35 | [`cyber-skycity`](#cyber) | 赛博 | — | `skycity.jpg` | 0.8 |
+| 36 | [`retro-seventies`](#retro) | 复古 | — | `retro.jpg` | 0.8 |
+| 37 | [`retro-flowerpower`](#retro) | 复古 | — | `flowerpower.jpg` | 0.8 |
+| 38 | [`retro-steampunk`](#retro) | 复古 | — | `steampunk.jpg` | 0.8 |
+| 39 | [`retro-gramophone`](#retro) | 复古 | — | `gramophone.jpg` | 0.8 |
+| 40 | [`sticker-pop`](#cartoon) | 卡通 | — | `sticker.jpg` | 0.8 |
+| 41 | [`sticker-garden`](#cartoon) | 卡通 | — | `garden.jpg` | 0.8 |
+| 42 | [`cartoon-teahouse`](#cartoon) | 卡通 | — | `cafe.jpg` | 0.8 |
+| 43 | [`cartoon-laputa`](#cartoon) | 卡通 | — | `laputa.jpg` | 0.8 |
+| 44 | [`glass-moongate`](#glass) | 透明玻璃 | — | `glass-moongate.png` | 0.5 |
+| 45 | [`glass-aurora`](#glass) | 透明玻璃 | — | `glass-aurora.png` | 0.5 |
+| 46 | [`glass-rain`](#glass) | 透明玻璃 | — | `glass-rain.png` | 0.5 |
+| 47 | [`lace-cameo`](#lace) | 蕾丝 | — | `lace-cameo.png` | 0.5 |
+| 48 | [`lace-curtain`](#lace) | 蕾丝 | — | `lace-curtain.png` | 0.5 |
+| 49 | [`lace-veil`](#lace) | 蕾丝 | — | `lace-veil.png` | 0.5 |
 
 <a id="ink"></a>
 
@@ -165,6 +175,7 @@ background-opacity-cells = true
 <table>
 <tr><td width="50%" valign="top"><a href="docs/previews/paint-dusk.jpg"><img src="docs/previews/paint-dusk.jpg" alt="paint-dusk"></a><br><code>paint-dusk</code><br>板绘 · 黄昏云海：动画背景画法的蓝调天空，云底被最后一点夕阳照亮，底部一道暗色山脊。</td><td width="50%" valign="top"><a href="docs/previews/crayon-night.jpg"><img src="docs/previews/crayon-night.jpg" alt="crayon-night"></a><br><code>crayon-night</code><br>蜡笔 · 星夜：深蓝卡纸上的蜡笔画，月亮、星星、旋转的夜空、排线的山丘、几棵棒棒糖树和一扇亮灯的窗。</td></tr>
 <tr><td width="50%" valign="top"><a href="docs/previews/ink-moon.jpg"><img src="docs/previews/ink-moon.jpg" alt="ink-moon"></a><br><code>ink-moon</code><br>水墨 · 远山：反转成暗色的水墨山水，远山层层隐进雾里，一轮月、几只鸟、一叶小舟和一方朱印。</td><td width="50%" valign="top"><a href="docs/previews/impression-dawn.jpg"><img src="docs/previews/impression-dawn.jpg" alt="impression-dawn"></a><br><code>impression-dawn</code><br>印象 · 日出：仿莫奈笔触的清晨港口，灰蓝雾气里一轮橙色太阳和它的倒影，几条小船。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/scroll-qingming.jpg"><img src="docs/previews/scroll-qingming.jpg" alt="scroll-qingming"></a><br><code>scroll-qingming</code><br>长卷 · 清明上河图：在深色旧绢上用浅墨重画虹桥一段，桥上挤满了人，大船在桥下落桅，两岸是店铺、楼阁和柳树。</td><td width="50%"></td></tr>
 </table>
 
 <a id="toon"></a>
@@ -182,6 +193,7 @@ background-opacity-cells = true
 <table>
 <tr><td width="50%" valign="top"><a href="docs/previews/toon-planet.jpg"><img src="docs/previews/toon-planet.jpg" alt="toon-planet"></a><br><code>toon-planet</code><br>带环的行星和卫星，硬边光带、青色边缘光、阴影里的漫画网点、粗描边。</td><td width="50%" valign="top"><a href="docs/previews/toon-koi.jpg"><img src="docs/previews/toon-koi.jpg" alt="toon-koi"></a><br><code>toon-koi</code><br>俯视的夜间池塘，锦鲤、睡莲叶和莲花，影子落在池底，水纹和飘落的花瓣。</td></tr>
 <tr><td width="50%" valign="top"><a href="docs/previews/toon-castle.jpg"><img src="docs/previews/toon-castle.jpg" alt="toon-castle"></a><br><code>toon-castle</code><br>黄昏时湖心岩岛上的城堡，圆塔尖顶、陡峭屋顶、暖色窗灯，湖面倒映着一切。</td><td width="50%" valign="top"><a href="docs/previews/toon-citadel.jpg"><img src="docs/previews/toon-citadel.jpg" alt="toon-citadel"></a><br><code>toon-citadel</code><br>峭壁高墙上的哥特王城，落日藏在主塔背后：平涂明暗、金色硬边光、光束、赛璐璐云层、深渊里的雾。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/toon-leyndell.jpg"><img src="docs/previews/toon-leyndell.jpg" alt="toon-leyndell"></a><br><code>toon-leyndell</code><br>黄昏的王城，金顶圣殿和高墙之上立着一棵巨大的黄金树：树干由很多股绞成，发光的树冠铺满天空，金叶不停飘落。</td><td width="50%"></td></tr>
 </table>
 
 <a id="glitch"></a>
@@ -215,7 +227,7 @@ background-opacity-cells = true
 
 <table>
 <tr><td width="50%" valign="top"><a href="docs/previews/cyber-neon.jpg"><img src="docs/previews/cyber-neon.jpg" alt="cyber-neon"></a><br><code>cyber-neon</code><br>夜间天际线，霓虹描边和竖排招牌，透视网格地面，四角的 HUD 框和准星。</td><td width="50%" valign="top"><a href="docs/previews/cyber-sakura.jpg"><img src="docs/previews/cyber-sakura.jpg" alt="cyber-sakura"></a><br><code>cyber-sakura</code><br>雨夜里霓虹勾勒的鸟居、发光的樱花枝和飘落的花瓣，湿地面倒映着灯光。</td></tr>
-<tr><td width="50%" valign="top"><a href="docs/previews/cyber-skyrail.jpg"><img src="docs/previews/cyber-skyrail.jpg" alt="cyber-skyrail"></a><br><code>cyber-skyrail</code><br>坐在夜间空轨车厢里看对面的车窗：窗外是下雨的霓虹城和低垂的月亮，另一条线的列车驶过，头顶有线路屏和吊环。</td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/cyber-skyrail.jpg"><img src="docs/previews/cyber-skyrail.jpg" alt="cyber-skyrail"></a><br><code>cyber-skyrail</code><br>坐在夜间空轨车厢里看对面的车窗：窗外是下雨的霓虹城和低垂的月亮，另一条线的列车驶过，头顶有线路屏和吊环。</td><td width="50%" valign="top"><a href="docs/previews/cyber-skycity.jpg"><img src="docs/previews/cyber-skycity.jpg" alt="cyber-skycity"></a><br><code>cyber-skycity</code><br>悬在夜空里的机械城：顶上挤满高楼，中间几层甲板布满管道和齿轮，底下的引擎往云海里打光束，四周是流光车道。</td></tr>
 </table>
 
 <a id="retro"></a>
@@ -252,9 +264,43 @@ background-opacity-cells = true
 <tr><td width="50%" valign="top"><a href="docs/previews/cartoon-teahouse.jpg"><img src="docs/previews/cartoon-teahouse.jpg" alt="cartoon-teahouse"></a><br><code>cartoon-teahouse</code><br>夜里的奶茶店：吊灯、黑板菜单、摆着罐子和绿植的架子，柜台上有珍珠奶茶、拿铁、咖啡机和一只睡着的猫。</td><td width="50%" valign="top"><a href="docs/previews/cartoon-laputa.jpg"><img src="docs/previews/cartoon-laputa.jpg" alt="cartoon-laputa"></a><br><code>cartoon-laputa</code><br>蓝调时刻，吉卜力背景画的感觉：积雨云还留着最后一点光，前面浮着长着大树的空中之城，瀑布和根须垂下来，下面是云海。</td></tr>
 </table>
 
+<a id="glass"></a>
+
+## 透明玻璃
+
+图是带透明通道的 PNG：一部分画成实的，其余留作玻璃，桌面壁纸从玻璃那部分透出来，成了画的一部分。主题文件里带了 `background-image-opacity = 1.9`，把实心的部分补回不透明；`background-opacity` 要在你自己的 config 里改成 0.5，因为 config 里的值会覆盖主题里的。
+
+```ini
+theme = glass-moongate
+background-opacity = 0.5
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/glass-moongate.jpg"><img src="docs/previews/glass-moongate.jpg" alt="glass-moongate"></a><br><code>glass-moongate</code><br>借景 · 月洞门：夜里的园林粉墙开一扇圆门，一枝梅从墙头伸过来。墙是实的，圆门里看到的是你的桌面。</td><td width="50%" valign="top"><a href="docs/previews/glass-aurora.jpg"><img src="docs/previews/glass-aurora.jpg" alt="glass-aurora"></a><br><code>glass-aurora</code><br>极光：一整幅极光光帘挂在玻璃上，几颗星，底部是实心的云杉山林，终端最下面几行正好落在深色上。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/glass-rain.jpg"><img src="docs/previews/glass-rain.jpg" alt="glass-rain"></a><br><code>glass-rain</code><br>雨窗：雨夜的窗玻璃上满是雾气，雨滴和往下流的水痕把雾擦开，桌面从擦开的地方透出来。</td><td width="50%"></td></tr>
+</table>
+
+<a id="lace"></a>
+
+## 蕾丝
+
+深色蕾丝铺在玻璃上。线都是深色的，字落在上面照样清楚；网孔会透出一点桌面，右上方各留一个开口，桌面在那里露得最多。开口的位置按全屏窗口设计，适合把壁纸里的人物或主体框在里面。用法和透明玻璃一样：`background-opacity` 设成 0.5。
+
+```ini
+theme = lace-cameo
+background-opacity = 0.5
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/lace-cameo.jpg"><img src="docs/previews/lace-cameo.jpg" alt="lace-cameo"></a><br><code>lace-cameo</code><br>浮雕框：午夜蓝网纱铺满整块玻璃，右上开一个椭圆浮雕框，框边是一圈镂空的香缇蕾丝，上下各有一道花边。</td><td width="50%" valign="top"><a href="docs/previews/lace-curtain.jpg"><img src="docs/previews/lace-curtain.jpg" alt="lace-curtain"></a><br><code>lace-curtain</code><br>窗纱：两片黑蕾丝窗帘用绑带束向两边，下半截是一道半帘，只在右上方留出一扇窗。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/lace-veil.jpg"><img src="docs/previews/lace-veil.jpg" alt="lace-veil"></a><br><code>lace-veil</code><br>头纱：深紫色点纱头纱从左上垂下来，在右上方被撩开，边缘是一圈宽蕾丝。</td><td width="50%"></td></tr>
+</table>
+
 ## 说明
 
-预览图都是真实的 Ghostty 窗口截图，透明度按各系列推荐的值设置，窗口后面垫的是一张程序生成的天空图。实际用的时候透出来的是你自己的桌面壁纸。
+预览图都是真实的 Ghostty 窗口截图，透明度按各系列推荐的值设置，窗口后面垫的是一张程序生成的天空图。实际用的时候透出来的是你自己的桌面壁纸，透明主题尤其如此：玻璃和开口里显示什么，取决于你的壁纸。
 
 背景画主题靠 Ghostty 的 `background-image`，需要 1.2 或更新的版本。图片按 `cover` 方式铺满窗口并居中，窗口比例不同时两边会被裁掉一些。画面的主体大多放在右侧和下方，左上角尽量留给文字。
 
@@ -265,9 +311,9 @@ background-opacity-cells = true
 ## 仓库结构
 
 ```
-themes/        主题文件，40 个
+themes/        主题文件，49 个
 shaders/       bleed-measure / bleed-spread / bleed（洇）、diamond（钻石玻璃）、watercolor（蜡笔水彩）
-backgrounds/   背景画主题用到的图片，3024×1964
+backgrounds/   背景画主题和透明主题用到的图片，3024×1964；透明主题的是带透明通道的 PNG
 docs/          预览图、封面，以及洇的详细说明
 install.sh     安装脚本
 ```

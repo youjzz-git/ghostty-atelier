@@ -1,0 +1,31 @@
+# Glass · Rain on the pane (雨窗)
+# A window on a rainy night: condensation on the glass, drops and the trails they
+# leave wiping it clear. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/glass-rain.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #080f1c
+foreground = #e5ecf1
+cursor-color = #a6d6ee
+cursor-text = #080f1c
+selection-background = #2d3f52
+selection-foreground = #e5ecf1
+split-divider-color = #374050
+
+palette = 0=#232c3a
+palette = 1=#f4a19e
+palette = 2=#8bcd99
+palette = 3=#deb36e
+palette = 4=#9bbafb
+palette = 5=#d9a5e1
+palette = 6=#61cdd9
+palette = 7=#cad2db
+palette = 8=#798898
+palette = 9=#fec3c0
+palette = 10=#afe4b9
+palette = 11=#f2ce99
+palette = 12=#c0d4fe
+palette = 13=#eec3f4
+palette = 14=#93e4ed
+palette = 15=#f0f6fc

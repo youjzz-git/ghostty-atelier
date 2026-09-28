@@ -1,0 +1,31 @@
+# Lace · Curtains (蕾丝 · 窗纱)
+# Black lace curtains tied back over a café curtain, parted over the upper
+# right of the desktop in a full-screen window. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/lace-curtain.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #0a080d
+foreground = #f2edf1
+cursor-color = #eaa9bb
+cursor-text = #0a080d
+selection-background = #3f3342
+selection-foreground = #f2edf1
+split-divider-color = #39373c
+
+palette = 0=#252328
+palette = 1=#f4a19e
+palette = 2=#8bcd99
+palette = 3=#deb36e
+palette = 4=#9bbafb
+palette = 5=#d9a5e1
+palette = 6=#61cdd9
+palette = 7=#d5ced7
+palette = 8=#867d88
+palette = 9=#fec3c0
+palette = 10=#afe4b9
+palette = 11=#f2ce99
+palette = 12=#c0d4fe
+palette = 13=#eec3f4
+palette = 14=#93e4ed
+palette = 15=#f8f3f9

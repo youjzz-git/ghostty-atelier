@@ -2,7 +2,7 @@
 
 [中文](README.md) · English
 
-40 themes for [Ghostty](https://ghostty.org). Some use shaders to turn the window into bleeding ink, gem glass or watercolor paper; the others put a painting behind the terminal, in cel-shaded, glitch, cyber, retro and cartoon styles. Every background is drawn by code, stroke by stroke: no photos, no AI-generated images.
+49 themes for [Ghostty](https://ghostty.org). Some use shaders to turn the window into bleeding ink, gem glass or watercolor paper; others put a painting behind the terminal, in cel-shaded, glitch, cyber, retro and cartoon styles; and a set of transparent themes paints only part of the window and leaves the rest as glass, so your wallpaper becomes part of the picture. Every background is drawn by code, stroke by stroke: no photos, no AI-generated images.
 
 ![cover](docs/cover.jpg)
 
@@ -12,6 +12,7 @@
 - [All themes](#all-themes)
 - Shader themes: [洇 · Ink bleed](#ink) · [Diamond glass](#diamond) · [Crayon watercolor](#crayon)
 - Background themes: [Paintings](#paintings) · [Cel-shaded](#toon) · [Glitch](#glitch) · [Cyber](#cyber) · [Retro](#retro) · [Cartoon](#cartoon)
+- Transparent themes: [Glass](#glass) · [Lace](#lace)
 - [Notes](#notes)
 - [Layout](#layout)
 - [License](#license)
@@ -34,7 +35,7 @@ background-opacity = 0.8
 background-opacity-cells = true
 ```
 
-Shader themes also need their shaders; each collection below shows its full config. When you switch to another collection, remove or comment out the previous `custom-shader` lines, or the old shader keeps running.
+Shader themes also need their shaders, and transparent themes need `background-opacity = 0.5`; each collection below shows its full config. When you switch to another collection, remove or comment out the previous `custom-shader` lines, or the old shader keeps running.
 
 Press `⌘⇧,` to reload the config. If the background image or shader does not change, open a new window.
 
@@ -63,25 +64,34 @@ Press `⌘⇧,` to reload the config. If the background image or shader does not
 | 19 | [`crayon-night`](#paintings) | Paintings | — | `crayon.jpg` | 0.97 |
 | 20 | [`ink-moon`](#paintings) | Paintings | — | `ink.jpg` | 0.97 |
 | 21 | [`impression-dawn`](#paintings) | Paintings | — | `impression.jpg` | 0.97 |
-| 22 | [`toon-planet`](#toon) | Cel-shaded | — | `toon.jpg` | 0.8 |
-| 23 | [`toon-koi`](#toon) | Cel-shaded | — | `koi.jpg` | 0.8 |
-| 24 | [`toon-castle`](#toon) | Cel-shaded | — | `castle.jpg` | 0.8 |
-| 25 | [`toon-citadel`](#toon) | Cel-shaded | — | `citadel.jpg` | 0.8 |
-| 26 | [`glitch-signal`](#glitch) | Glitch | — | `glitch.jpg` | 0.8 |
-| 27 | [`glitch-peony`](#glitch) | Glitch | — | `peony.jpg` | 0.8 |
-| 28 | [`glitch-mirage`](#glitch) | Glitch | — | `mirage.jpg` | 0.8 |
-| 29 | [`glitch-eclipse`](#glitch) | Glitch | — | `eclipse.jpg` | 0.8 |
-| 30 | [`cyber-neon`](#cyber) | Cyber | — | `cyber.jpg` | 0.8 |
-| 31 | [`cyber-sakura`](#cyber) | Cyber | — | `sakura.jpg` | 0.8 |
-| 32 | [`cyber-skyrail`](#cyber) | Cyber | — | `skyrail.jpg` | 0.8 |
-| 33 | [`retro-seventies`](#retro) | Retro | — | `retro.jpg` | 0.8 |
-| 34 | [`retro-flowerpower`](#retro) | Retro | — | `flowerpower.jpg` | 0.8 |
-| 35 | [`retro-steampunk`](#retro) | Retro | — | `steampunk.jpg` | 0.8 |
-| 36 | [`retro-gramophone`](#retro) | Retro | — | `gramophone.jpg` | 0.8 |
-| 37 | [`sticker-pop`](#cartoon) | Cartoon | — | `sticker.jpg` | 0.8 |
-| 38 | [`sticker-garden`](#cartoon) | Cartoon | — | `garden.jpg` | 0.8 |
-| 39 | [`cartoon-teahouse`](#cartoon) | Cartoon | — | `cafe.jpg` | 0.8 |
-| 40 | [`cartoon-laputa`](#cartoon) | Cartoon | — | `laputa.jpg` | 0.8 |
+| 22 | [`scroll-qingming`](#paintings) | Paintings | — | `qingming.jpg` | 0.97 |
+| 23 | [`toon-planet`](#toon) | Cel-shaded | — | `toon.jpg` | 0.8 |
+| 24 | [`toon-koi`](#toon) | Cel-shaded | — | `koi.jpg` | 0.8 |
+| 25 | [`toon-castle`](#toon) | Cel-shaded | — | `castle.jpg` | 0.8 |
+| 26 | [`toon-citadel`](#toon) | Cel-shaded | — | `citadel.jpg` | 0.8 |
+| 27 | [`toon-leyndell`](#toon) | Cel-shaded | — | `leyndell.jpg` | 0.8 |
+| 28 | [`glitch-signal`](#glitch) | Glitch | — | `glitch.jpg` | 0.8 |
+| 29 | [`glitch-peony`](#glitch) | Glitch | — | `peony.jpg` | 0.8 |
+| 30 | [`glitch-mirage`](#glitch) | Glitch | — | `mirage.jpg` | 0.8 |
+| 31 | [`glitch-eclipse`](#glitch) | Glitch | — | `eclipse.jpg` | 0.8 |
+| 32 | [`cyber-neon`](#cyber) | Cyber | — | `cyber.jpg` | 0.8 |
+| 33 | [`cyber-sakura`](#cyber) | Cyber | — | `sakura.jpg` | 0.8 |
+| 34 | [`cyber-skyrail`](#cyber) | Cyber | — | `skyrail.jpg` | 0.8 |
+| 35 | [`cyber-skycity`](#cyber) | Cyber | — | `skycity.jpg` | 0.8 |
+| 36 | [`retro-seventies`](#retro) | Retro | — | `retro.jpg` | 0.8 |
+| 37 | [`retro-flowerpower`](#retro) | Retro | — | `flowerpower.jpg` | 0.8 |
+| 38 | [`retro-steampunk`](#retro) | Retro | — | `steampunk.jpg` | 0.8 |
+| 39 | [`retro-gramophone`](#retro) | Retro | — | `gramophone.jpg` | 0.8 |
+| 40 | [`sticker-pop`](#cartoon) | Cartoon | — | `sticker.jpg` | 0.8 |
+| 41 | [`sticker-garden`](#cartoon) | Cartoon | — | `garden.jpg` | 0.8 |
+| 42 | [`cartoon-teahouse`](#cartoon) | Cartoon | — | `cafe.jpg` | 0.8 |
+| 43 | [`cartoon-laputa`](#cartoon) | Cartoon | — | `laputa.jpg` | 0.8 |
+| 44 | [`glass-moongate`](#glass) | Glass | — | `glass-moongate.png` | 0.5 |
+| 45 | [`glass-aurora`](#glass) | Glass | — | `glass-aurora.png` | 0.5 |
+| 46 | [`glass-rain`](#glass) | Glass | — | `glass-rain.png` | 0.5 |
+| 47 | [`lace-cameo`](#lace) | Lace | — | `lace-cameo.png` | 0.5 |
+| 48 | [`lace-curtain`](#lace) | Lace | — | `lace-curtain.png` | 0.5 |
+| 49 | [`lace-veil`](#lace) | Lace | — | `lace-veil.png` | 0.5 |
 
 <a id="ink"></a>
 
@@ -165,6 +175,7 @@ background-opacity-cells = true
 <table>
 <tr><td width="50%" valign="top"><a href="docs/previews/paint-dusk.jpg"><img src="docs/previews/paint-dusk.jpg" alt="paint-dusk"></a><br><code>paint-dusk</code><br>Blue-hour sky in the manner of anime backgrounds, clouds lit from below by the last of the sunset, a dark ridge along the bottom.</td><td width="50%" valign="top"><a href="docs/previews/crayon-night.jpg"><img src="docs/previews/crayon-night.jpg" alt="crayon-night"></a><br><code>crayon-night</code><br>A crayon drawing on navy construction paper: moon, stars, sky swirls, hatched hills, lollipop trees and a house with a lit window.</td></tr>
 <tr><td width="50%" valign="top"><a href="docs/previews/ink-moon.jpg"><img src="docs/previews/ink-moon.jpg" alt="ink-moon"></a><br><code>ink-moon</code><br>An ink-wash landscape inverted for the dark: peaks fading into mist, a moon, birds, a small boat and a red seal.</td><td width="50%" valign="top"><a href="docs/previews/impression-dawn.jpg"><img src="docs/previews/impression-dawn.jpg" alt="impression-dawn"></a><br><code>impression-dawn</code><br>A harbor at dawn in broken brushwork after Monet: blue-gray haze, an orange sun and its reflection, dark boats.</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/scroll-qingming.jpg"><img src="docs/previews/scroll-qingming.jpg" alt="scroll-qingming"></a><br><code>scroll-qingming</code><br>The rainbow-bridge section of Along the River During the Qingming Festival, redrawn on dark aged silk: a crowded bridge, a boat lowering its mast, shops and willows.</td><td width="50%"></td></tr>
 </table>
 
 <a id="toon"></a>
@@ -182,6 +193,7 @@ background-opacity-cells = true
 <table>
 <tr><td width="50%" valign="top"><a href="docs/previews/toon-planet.jpg"><img src="docs/previews/toon-planet.jpg" alt="toon-planet"></a><br><code>toon-planet</code><br>A ringed planet and a moon: hard light bands, a cyan rim light, manga halftone in the shadows, heavy outlines.</td><td width="50%" valign="top"><a href="docs/previews/toon-koi.jpg"><img src="docs/previews/toon-koi.jpg" alt="toon-koi"></a><br><code>toon-koi</code><br>A dark pond seen from above: koi, lily pads and lotus, their shadows on the pond floor, ripples and petals.</td></tr>
 <tr><td width="50%" valign="top"><a href="docs/previews/toon-castle.jpg"><img src="docs/previews/toon-castle.jpg" alt="toon-castle"></a><br><code>toon-castle</code><br>A castle on a rocky island at dusk: round towers with conical roofs, a steep hall, warm windows, a mirroring lake.</td><td width="50%" valign="top"><a href="docs/previews/toon-citadel.jpg"><img src="docs/previews/toon-citadel.jpg" alt="toon-citadel"></a><br><code>toon-citadel</code><br>A gothic royal citadel on sheer walls, the low sun hidden behind its keep: flat cel planes, hard gold rims, god rays, cel-lit clouds, mist in the chasm.</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/toon-leyndell.jpg"><img src="docs/previews/toon-leyndell.jpg" alt="toon-leyndell"></a><br><code>toon-leyndell</code><br>A royal capital of golden domes and high walls at dusk under a colossal golden tree: a braided trunk and a glowing crown shedding leaves.</td><td width="50%"></td></tr>
 </table>
 
 <a id="glitch"></a>
@@ -215,7 +227,7 @@ background-opacity-cells = true
 
 <table>
 <tr><td width="50%" valign="top"><a href="docs/previews/cyber-neon.jpg"><img src="docs/previews/cyber-neon.jpg" alt="cyber-neon"></a><br><code>cyber-neon</code><br>A night skyline with neon rims and vertical signs, a perspective grid floor, HUD brackets and a reticle.</td><td width="50%" valign="top"><a href="docs/previews/cyber-sakura.jpg"><img src="docs/previews/cyber-sakura.jpg" alt="cyber-sakura"></a><br><code>cyber-sakura</code><br>A rainy night: a torii outlined in neon, glowing cherry branches, drifting petals, a wet floor mirroring the light.</td></tr>
-<tr><td width="50%" valign="top"><a href="docs/previews/cyber-skyrail.jpg"><img src="docs/previews/cyber-skyrail.jpg" alt="cyber-skyrail"></a><br><code>cyber-skyrail</code><br>Inside a sky-rail car at night: wide windows onto a rainy neon city and a low moon, another train sliding past, a route display and hand straps.</td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/cyber-skyrail.jpg"><img src="docs/previews/cyber-skyrail.jpg" alt="cyber-skyrail"></a><br><code>cyber-skyrail</code><br>Inside a sky-rail car at night: wide windows onto a rainy neon city and a low moon, another train sliding past, a route display and hand straps.</td><td width="50%" valign="top"><a href="docs/previews/cyber-skycity.jpg"><img src="docs/previews/cyber-skycity.jpg" alt="cyber-skycity"></a><br><code>cyber-skycity</code><br>A machine city hanging in the night sky: towers on top, decks of pipes and gears, an engine firing beams into the clouds, traffic streaking around it.</td></tr>
 </table>
 
 <a id="retro"></a>
@@ -252,9 +264,43 @@ background-opacity-cells = true
 <tr><td width="50%" valign="top"><a href="docs/previews/cartoon-teahouse.jpg"><img src="docs/previews/cartoon-teahouse.jpg" alt="cartoon-teahouse"></a><br><code>cartoon-teahouse</code><br>A milk-tea shop at night: pendant lamps, a chalkboard menu, a shelf of jars and plants, boba, a latte, an espresso machine and a sleeping cat.</td><td width="50%" valign="top"><a href="docs/previews/cartoon-laputa.jpg"><img src="docs/previews/cartoon-laputa.jpg" alt="cartoon-laputa"></a><br><code>cartoon-laputa</code><br>Blue hour, painted like a Ghibli background: a cumulonimbus holding the last light, a floating island with its great tree, waterfalls and roots, a sea of cloud.</td></tr>
 </table>
 
+<a id="glass"></a>
+
+## Glass
+
+Each image is a PNG with an alpha channel: part of it is painted solid and the rest is left as glass, so your wallpaper shows through and becomes part of the picture. The theme files set `background-image-opacity = 1.9`, which brings the solid parts back to full opacity; `background-opacity` has to be set to 0.5 in your own config, because the config overrides a theme.
+
+```ini
+theme = glass-moongate
+background-opacity = 0.5
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/glass-moongate.jpg"><img src="docs/previews/glass-moongate.jpg" alt="glass-moongate"></a><br><code>glass-moongate</code><br>A garden wall at night with a round moon gate and a plum branch. The wall is solid; through the gate you see your desktop.</td><td width="50%" valign="top"><a href="docs/previews/glass-aurora.jpg"><img src="docs/previews/glass-aurora.jpg" alt="glass-aurora"></a><br><code>glass-aurora</code><br>A curtain of aurora across the glass, a few stars, and a solid spruce ridge along the bottom where the last lines of output sit.</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/glass-rain.jpg"><img src="docs/previews/glass-rain.jpg" alt="glass-rain"></a><br><code>glass-rain</code><br>A window on a rainy night: condensation on the glass, with drops and running trails wiping it clear so the desktop shows through.</td><td width="50%"></td></tr>
+</table>
+
+<a id="lace"></a>
+
+## Lace
+
+Dark lace laid over the glass. The threads are dark, so text stays readable on them; the net lets a little of the desktop through, and each design leaves one opening at the upper right where the desktop shows most. The openings are placed for a full-screen window and suit a wallpaper with a figure or subject in that area. Set `background-opacity` to 0.5, as for the glass themes.
+
+```ini
+theme = lace-cameo
+background-opacity = 0.5
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/lace-cameo.jpg"><img src="docs/previews/lace-cameo.jpg" alt="lace-cameo"></a><br><code>lace-cameo</code><br>Cameo: midnight-navy tulle over the whole pane, an oval cameo window at the upper right framed in Chantilly lace, borders along the top and bottom.</td><td width="50%" valign="top"><a href="docs/previews/lace-curtain.jpg"><img src="docs/previews/lace-curtain.jpg" alt="lace-curtain"></a><br><code>lace-curtain</code><br>Curtains: black lace curtains tied back over a café curtain, leaving one window open at the upper right.</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/lace-veil.jpg"><img src="docs/previews/lace-veil.jpg" alt="lace-veil"></a><br><code>lace-veil</code><br>Veil: a deep violet point d'esprit veil falling from the upper left and swept aside at the upper right, edged with broad lace.</td><td width="50%"></td></tr>
+</table>
+
 ## Notes
 
-Every preview is a real Ghostty window captured at the recommended opacity for its collection, placed over a procedurally generated sky. In use, your own wallpaper shows through instead.
+Every preview is a real Ghostty window captured at the recommended opacity for its collection, placed over a procedurally generated sky. In use, your own wallpaper shows through instead; for the transparent themes, what appears in the glass and the openings depends entirely on your wallpaper.
 
 Background themes use Ghostty's `background-image`, which needs version 1.2 or newer. The image covers the window and stays centered, so a window with a different aspect ratio crops a little off the sides. Most of each picture sits on the right and at the bottom, leaving the top left for text.
 
@@ -265,9 +311,9 @@ Only tested with Ghostty 1.3.1 on macOS. The shaders assume two pixels per point
 ## Layout
 
 ```
-themes/        theme files, 40 of them
+themes/        theme files, 49 of them
 shaders/       bleed-measure / bleed-spread / bleed (ink bleed), diamond (diamond glass), watercolor (crayon watercolor)
-backgrounds/   images used by the background themes, 3024×1964
+backgrounds/   images for the background and transparent themes, 3024×1964; the transparent ones are PNGs with alpha
 docs/          previews, cover and the ink bleed write-up
 install.sh     installer
 ```

@@ -1,0 +1,32 @@
+# Glass · Moon gate (借景 · 月洞门)
+# A garden wall at night with a round moon gate cut through it and a plum branch.
+# The wall is solid; the gate is open glass, so your desktop becomes the garden beyond.
+# Set background-opacity = 0.5 in your config; background-image-opacity below keeps the wall solid.
+background-image = ~/.config/ghostty/backgrounds/glass-moongate.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #0b172f
+foreground = #eaeff5
+cursor-color = #efafc7
+cursor-text = #0b172f
+selection-background = #34425d
+selection-foreground = #eaeff5
+split-divider-color = #3b4b66
+
+palette = 0=#27354f
+palette = 1=#f4a19e
+palette = 2=#8bcd99
+palette = 3=#deb36e
+palette = 4=#9bbafb
+palette = 5=#d9a5e1
+palette = 6=#61cdd9
+palette = 7=#ccd1db
+palette = 8=#79879f
+palette = 9=#fec3c0
+palette = 10=#afe4b9
+palette = 11=#f2ce99
+palette = 12=#c0d4fe
+palette = 13=#eec3f4
+palette = 14=#93e4ed
+palette = 15=#f1f5fc

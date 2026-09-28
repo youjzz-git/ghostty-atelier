@@ -1,0 +1,30 @@
+# Toon · Royal capital (三渲二 · 王城罗德尔)
+# A royal capital of golden domes and high walls at dusk, under a colossal
+# golden tree: a trunk braided from many strands, a crown of glowing leaves filling the sky.
+background-image = ~/.config/ghostty/backgrounds/leyndell.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0a0b1c
+foreground = #f1eadc
+cursor-color = #f4c26a
+cursor-text = #0a0b1c
+selection-background = #383a57
+selection-foreground = #f1eadc
+split-divider-color = #393b4f
+
+palette = 0=#25273a
+palette = 1=#f19e97
+palette = 2=#88ca95
+palette = 3=#d7b16a
+palette = 4=#92b9f8
+palette = 5=#dca0d6
+palette = 6=#5ecad6
+palette = 7=#cfd0db
+palette = 8=#7b7e98
+palette = 9=#fec4be
+palette = 10=#afe4b9
+palette = 11=#efd098
+palette = 12=#bdd6fe
+palette = 13=#f3c2ee
+palette = 14=#93e4ed
+palette = 15=#f3f4fc

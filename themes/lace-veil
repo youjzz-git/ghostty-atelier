@@ -1,0 +1,31 @@
+# Lace · Veil (蕾丝 · 头纱)
+# A deep violet bridal veil with point d'esprit dots, swept aside over the
+# upper right of the desktop in a full-screen window. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/lace-veil.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #110917
+foreground = #f1ecf5
+cursor-color = #d6b4f0
+cursor-text = #110917
+selection-background = #453651
+selection-foreground = #f1ecf5
+split-divider-color = #423949
+
+palette = 0=#2d2534
+palette = 1=#f4a19e
+palette = 2=#8bcd99
+palette = 3=#deb36e
+palette = 4=#9bbafb
+palette = 5=#d9a5e1
+palette = 6=#61cdd9
+palette = 7=#d4ced9
+palette = 8=#8e8099
+palette = 9=#fec3c0
+palette = 10=#afe4b9
+palette = 11=#f2ce99
+palette = 12=#c0d4fe
+palette = 13=#eec3f4
+palette = 14=#93e4ed
+palette = 15=#f7f3fa

@@ -1,0 +1,30 @@
+# Cyber · Sky machine city (赛博 · 天空机械城)
+# A machine city hanging in the night sky: towers on top, deck rings with pipes
+# and gears, an engine core firing beams into the clouds, traffic streaking around it.
+background-image = ~/.config/ghostty/backgrounds/skycity.jpg
+background-image-fit = cover
+background-image-position = center
+background = #0a051c
+foreground = #e1f2f8
+cursor-color = #45e6f6
+cursor-text = #0a051c
+selection-background = #452b57
+selection-foreground = #e1f2f8
+split-divider-color = #373350
+
+palette = 0=#241f3a
+palette = 1=#fe93a4
+palette = 2=#61d19a
+palette = 3=#e3ad4b
+palette = 4=#95b6fe
+palette = 5=#f294ca
+palette = 6=#1acfdf
+palette = 7=#d0cfda
+palette = 8=#8581a3
+palette = 9=#febdc6
+palette = 10=#95e6bb
+palette = 11=#f4ca84
+palette = 12=#bbd1ff
+palette = 13=#feb8df
+palette = 14=#79e4f0
+palette = 15=#f5f4fc

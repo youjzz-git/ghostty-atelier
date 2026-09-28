@@ -1,0 +1,30 @@
+# Scroll · Along the River at Qingming (长卷 · 清明上河图)
+# The rainbow-bridge section of the Song scroll redrawn by code on dark aged silk:
+# pale ink lines, faded mineral color, the crowded bridge, boats, shops and willows.
+background-image = ~/.config/ghostty/backgrounds/qingming.jpg
+background-image-fit = cover
+background-image-position = center
+background = #1e130a
+foreground = #eee4cf
+cursor-color = #f18b71
+cursor-text = #1e130a
+selection-background = #503b2a
+selection-foreground = #eee4cf
+split-divider-color = #52453a
+
+palette = 0=#3d3026
+palette = 1=#e89f90
+palette = 2=#96c38c
+palette = 3=#d3ae71
+palette = 4=#75bfe3
+palette = 5=#e39cb7
+palette = 6=#68c6c6
+palette = 7=#d9cfc7
+palette = 8=#8e7c6f
+palette = 9=#fbc1b5
+palette = 10=#b9ddb1
+palette = 11=#e9cd9d
+palette = 12=#a2daf6
+palette = 13=#f7bfd3
+palette = 14=#9ae0df
+palette = 15=#faf4ef
