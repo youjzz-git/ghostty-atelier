@@ -1,0 +1,32 @@
+# Muse · Mondrian (缪斯 · 蒙德里安)
+# "Broadway Boogie Woogie" after dark: mustard lines broken into oxblood, navy and slate squares,
+# colour blocks, and one open cell where the figure stands, the head breaking through the grid.
+# The cut-out follows a figure in one particular wallpaper, placed for a full-screen window. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/muse-mondrian.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #0d0e12
+foreground = #f4f2ec
+cursor-color = #f6c835
+cursor-text = #0d0e12
+selection-background = #353d4d
+selection-foreground = #f4f2ec
+split-divider-color = #3d3e43
+
+palette = 0=#292a2e
+palette = 1=#fda296
+palette = 2=#89d298
+palette = 3=#d9bb66
+palette = 4=#9bbeff
+palette = 5=#eea2d4
+palette = 6=#56d2df
+palette = 7=#ccd1db
+palette = 8=#808693
+palette = 9=#fec9c1
+palette = 10=#b2e7bc
+palette = 11=#ecd69b
+palette = 12=#c3d8ff
+palette = 13=#fcc3e8
+palette = 14=#96e7f1
+palette = 15=#f2f5fc

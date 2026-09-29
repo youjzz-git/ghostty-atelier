@@ -1,0 +1,32 @@
+# Muse · Klimt (缪斯 · 克里姆特)
+# After "Portrait of Adele Bloch-Bauer I": face, hair and shoulders stay open, the rest of the figure
+# turns into a gown of gold leaf in wavy panels of eyes, spirals and rectangles, in a field of gold mosaic.
+# The cut-out follows a figure in one particular wallpaper, placed for a full-screen window. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/muse-klimt.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #100b05
+foreground = #f4ead5
+cursor-color = #e8be62
+cursor-text = #100b05
+selection-background = #4e381f
+selection-foreground = #f4ead5
+split-divider-color = #413a32
+
+palette = 0=#2c261f
+palette = 1=#f4a392
+palette = 2=#92cc93
+palette = 3=#d8b66d
+palette = 4=#8fbefa
+palette = 5=#e6a1cf
+palette = 6=#62cfce
+palette = 7=#d7d0c6
+palette = 8=#93846f
+palette = 9=#ffc4b8
+palette = 10=#b4e3b4
+palette = 11=#edd198
+palette = 12=#b8d7fe
+palette = 13=#f9c0e5
+palette = 14=#93e5e4
+palette = 15=#f9f4ee

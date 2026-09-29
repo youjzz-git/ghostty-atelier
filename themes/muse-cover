@@ -1,0 +1,32 @@
+# Muse · Cover (缪斯 · 时装封面)
+# A fashion magazine cover: the desktop is the cover photograph, the figure stands in front of
+# a deep red Didone masthead, with cover lines, a French sticker and a barcode.
+# The cut-out follows a figure in one particular wallpaper, placed for a full-screen window. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/muse-cover.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #0b0b0c
+foreground = #f4f1ed
+cursor-color = #e64343
+cursor-text = #0b0b0c
+selection-background = #413c38
+selection-foreground = #f4f1ed
+split-divider-color = #3a3a3c
+
+palette = 0=#262627
+palette = 1=#f4a19a
+palette = 2=#8bcd99
+palette = 3=#d8b66d
+palette = 4=#8fbefa
+palette = 5=#e9a1c9
+palette = 6=#61ced4
+palette = 7=#d9cfc7
+palette = 8=#857f7a
+palette = 9=#fec4be
+palette = 10=#afe4b9
+palette = 11=#edd198
+palette = 12=#b8d7fe
+palette = 13=#fcc0e0
+palette = 14=#93e5e9
+palette = 15=#faf4ef

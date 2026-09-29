@@ -2,7 +2,7 @@
 
 中文 · [English](README.en.md)
 
-给 [Ghostty](https://ghostty.org) 做的一组主题，共 49 个。一部分靠 shader 把窗口变成水墨、宝石玻璃或者水彩纸，另一部分在终端背后放一幅画，风格有三渲二、故障、赛博、复古和卡通；还有一组透明主题，画只占一部分，其余是玻璃，让你的桌面壁纸也成为画面的一部分。所有背景图都是用代码一笔一笔画出来的，不是照片，也不是 AI 生成的图片。
+给 [Ghostty](https://ghostty.org) 做的一组主题，共 53 个。一部分靠 shader 把窗口变成水墨、宝石玻璃或者水彩纸，另一部分在终端背后放一幅画，风格有三渲二、故障、赛博、复古和卡通；还有一组透明主题，画只占一部分，其余是玻璃，让你的桌面壁纸也成为画面的一部分。所有背景图都是用代码一笔一笔画出来的，不是照片，也不是 AI 生成的图片。
 
 ![cover](docs/cover.jpg)
 
@@ -12,7 +12,7 @@
 - [全部主题一览](#全部主题一览)
 - Shader 主题：[洇 · 水墨晕开](#ink) · [钻石玻璃](#diamond) · [蜡笔水彩](#crayon)
 - 背景画主题：[静态画作](#paintings) · [三渲二](#toon) · [故障](#glitch) · [赛博](#cyber) · [复古](#retro) · [卡通](#cartoon)
-- 透明主题：[透明玻璃](#glass) · [蕾丝](#lace)
+- 透明主题：[透明玻璃](#glass) · [蕾丝](#lace) · [缪斯](#muse)
 - [说明](#说明)
 - [仓库结构](#仓库结构)
 - [许可证](#许可证)
@@ -92,6 +92,10 @@ Shader 主题还要加上对应的 shader，透明主题要把 `background-opaci
 | 47 | [`lace-cameo`](#lace) | 蕾丝 | — | `lace-cameo.png` | 0.5 |
 | 48 | [`lace-curtain`](#lace) | 蕾丝 | — | `lace-curtain.png` | 0.5 |
 | 49 | [`lace-veil`](#lace) | 蕾丝 | — | `lace-veil.png` | 0.5 |
+| 50 | [`muse-mucha`](#muse) | 缪斯 | — | `muse-mucha.png` | 0.5 |
+| 51 | [`muse-klimt`](#muse) | 缪斯 | — | `muse-klimt.png` | 0.5 |
+| 52 | [`muse-cover`](#muse) | 缪斯 | — | `muse-cover.png` | 0.5 |
+| 53 | [`muse-mondrian`](#muse) | 缪斯 | — | `muse-mondrian.png` | 0.5 |
 
 <a id="ink"></a>
 
@@ -298,6 +302,23 @@ background-opacity-cells = true
 <tr><td width="50%" valign="top"><a href="docs/previews/lace-veil.jpg"><img src="docs/previews/lace-veil.jpg" alt="lace-veil"></a><br><code>lace-veil</code><br>头纱：深紫色点纱头纱从左上垂下来，在右上方被撩开，边缘是一圈宽蕾丝。</td><td width="50%"></td></tr>
 </table>
 
+<a id="muse"></a>
+
+## 缪斯
+
+透明主题的另一种做法：开口不是椭圆或窗户，而是沿着一张特定壁纸里人物的轮廓抠出来的（轮廓用 macOS 的主体抠图从壁纸里取出，图里没有壁纸本身），所以人物像是站在画面前面，头发越过画框、挡住刊名。四幅分别借用穆夏、克里姆特、时装杂志封面和蒙德里安的样式。轮廓按那张壁纸在全屏窗口里的位置对好；换成别的壁纸，剪影里透出的就是你的壁纸在那个位置的内容，就像预览图里透出的是天空。挡在文字后面的颜色都压得够深，白字照样清楚。用法和透明玻璃一样：`background-opacity` 设成 0.5。
+
+```ini
+theme = muse-mucha
+background-opacity = 0.5
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/muse-mucha.jpg"><img src="docs/previews/muse-mucha.jpg" alt="muse-mucha"></a><br><code>muse-mucha</code><br>穆夏：仿《拜占庭头像：金发女郎》，人物站在镶宝石的圆环前，头发越过圆环，旁边是金色鞭形卷须、罂粟花和一排扇形饰带。</td><td width="50%" valign="top"><a href="docs/previews/muse-klimt.jpg"><img src="docs/previews/muse-klimt.jpg" alt="muse-klimt"></a><br><code>muse-klimt</code><br>克里姆特：仿《阿黛尔肖像》，只留脸、头发和肩膀，其余全变成一袭暗金长裙，波浪竖幅里排着眼纹、螺旋和方块，四周是金色马赛克。</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/muse-cover.jpg"><img src="docs/previews/muse-cover.jpg" alt="muse-cover"></a><br><code>muse-cover</code><br>时装封面：右半边是封面照片，人物挡在深红色的 Didot 刊名 MUSE 前面，配封面标题、法文贴纸和条形码；左边的黑页留给文字。</td><td width="50%" valign="top"><a href="docs/previews/muse-mondrian.jpg"><img src="docs/previews/muse-mondrian.jpg" alt="muse-mondrian"></a><br><code>muse-mondrian</code><br>蒙德里安：夜版《百老汇爵士乐》，暗芥末黄的网格线里嵌着暗红、藏青和石板灰的小方块，人物站在留空的一格里，头顶冲出网格。</td></tr>
+</table>
+
 ## 说明
 
 预览图都是真实的 Ghostty 窗口截图，透明度按各系列推荐的值设置，窗口后面垫的是一张程序生成的天空图。实际用的时候透出来的是你自己的桌面壁纸，透明主题尤其如此：玻璃和开口里显示什么，取决于你的壁纸。
@@ -311,7 +332,7 @@ background-opacity-cells = true
 ## 仓库结构
 
 ```
-themes/        主题文件，49 个
+themes/        主题文件，53 个
 shaders/       bleed-measure / bleed-spread / bleed（洇）、diamond（钻石玻璃）、watercolor（蜡笔水彩）
 backgrounds/   背景画主题和透明主题用到的图片，3024×1964；透明主题的是带透明通道的 PNG
 docs/          预览图、封面，以及洇的详细说明

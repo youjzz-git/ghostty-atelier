@@ -2,7 +2,7 @@
 
 [中文](README.md) · English
 
-49 themes for [Ghostty](https://ghostty.org). Some use shaders to turn the window into bleeding ink, gem glass or watercolor paper; others put a painting behind the terminal, in cel-shaded, glitch, cyber, retro and cartoon styles; and a set of transparent themes paints only part of the window and leaves the rest as glass, so your wallpaper becomes part of the picture. Every background is drawn by code, stroke by stroke: no photos, no AI-generated images.
+53 themes for [Ghostty](https://ghostty.org). Some use shaders to turn the window into bleeding ink, gem glass or watercolor paper; others put a painting behind the terminal, in cel-shaded, glitch, cyber, retro and cartoon styles; and a set of transparent themes paints only part of the window and leaves the rest as glass, so your wallpaper becomes part of the picture. Every background is drawn by code, stroke by stroke: no photos, no AI-generated images.
 
 ![cover](docs/cover.jpg)
 
@@ -12,7 +12,7 @@
 - [All themes](#all-themes)
 - Shader themes: [洇 · Ink bleed](#ink) · [Diamond glass](#diamond) · [Crayon watercolor](#crayon)
 - Background themes: [Paintings](#paintings) · [Cel-shaded](#toon) · [Glitch](#glitch) · [Cyber](#cyber) · [Retro](#retro) · [Cartoon](#cartoon)
-- Transparent themes: [Glass](#glass) · [Lace](#lace)
+- Transparent themes: [Glass](#glass) · [Lace](#lace) · [Muse](#muse)
 - [Notes](#notes)
 - [Layout](#layout)
 - [License](#license)
@@ -92,6 +92,10 @@ Press `⌘⇧,` to reload the config. If the background image or shader does not
 | 47 | [`lace-cameo`](#lace) | Lace | — | `lace-cameo.png` | 0.5 |
 | 48 | [`lace-curtain`](#lace) | Lace | — | `lace-curtain.png` | 0.5 |
 | 49 | [`lace-veil`](#lace) | Lace | — | `lace-veil.png` | 0.5 |
+| 50 | [`muse-mucha`](#muse) | Muse | — | `muse-mucha.png` | 0.5 |
+| 51 | [`muse-klimt`](#muse) | Muse | — | `muse-klimt.png` | 0.5 |
+| 52 | [`muse-cover`](#muse) | Muse | — | `muse-cover.png` | 0.5 |
+| 53 | [`muse-mondrian`](#muse) | Muse | — | `muse-mondrian.png` | 0.5 |
 
 <a id="ink"></a>
 
@@ -298,6 +302,23 @@ background-opacity-cells = true
 <tr><td width="50%" valign="top"><a href="docs/previews/lace-veil.jpg"><img src="docs/previews/lace-veil.jpg" alt="lace-veil"></a><br><code>lace-veil</code><br>Veil: a deep violet point d'esprit veil falling from the upper left and swept aside at the upper right, edged with broad lace.</td><td width="50%"></td></tr>
 </table>
 
+<a id="muse"></a>
+
+## Muse
+
+Another take on the transparent themes: the opening is not an oval or a window but the outline of a figure in one particular wallpaper (traced from it with macOS subject lifting; none of the wallpaper itself is in the images), so the figure seems to stand in front of the picture, the hair crossing the frame and covering the masthead. The four borrow from Mucha, Klimt, a fashion magazine cover and Mondrian. The outline is placed for that wallpaper in a full-screen window; with any other wallpaper the cut-out shows whatever sits there, the way the sky does in the previews. Everything that can sit behind text is kept dark enough for white text. Set `background-opacity` to 0.5, as for the glass themes.
+
+```ini
+theme = muse-mucha
+background-opacity = 0.5
+background-opacity-cells = true
+```
+
+<table>
+<tr><td width="50%" valign="top"><a href="docs/previews/muse-mucha.jpg"><img src="docs/previews/muse-mucha.jpg" alt="muse-mucha"></a><br><code>muse-mucha</code><br>Mucha: after "Byzantine Head: The Blonde", the figure before a jewelled medallion with the hair crossing the ring, gold whiplash tendrils, poppies and a frieze of fans.</td><td width="50%" valign="top"><a href="docs/previews/muse-klimt.jpg"><img src="docs/previews/muse-klimt.jpg" alt="muse-klimt"></a><br><code>muse-klimt</code><br>Klimt: after "Portrait of Adele Bloch-Bauer I", only the face, hair and shoulders stay open; the rest becomes a dark-gold gown in wavy panels of eyes, spirals and rectangles, in a field of gold mosaic.</td></tr>
+<tr><td width="50%" valign="top"><a href="docs/previews/muse-cover.jpg"><img src="docs/previews/muse-cover.jpg" alt="muse-cover"></a><br><code>muse-cover</code><br>Cover: the right half is the cover photograph, the figure standing in front of a deep red Didot masthead, with cover lines, a French sticker and a barcode; the black page on the left is for text.</td><td width="50%" valign="top"><a href="docs/previews/muse-mondrian.jpg"><img src="docs/previews/muse-mondrian.jpg" alt="muse-mondrian"></a><br><code>muse-mondrian</code><br>Mondrian: "Broadway Boogie Woogie" after dark, mustard lines broken by oxblood, navy and slate squares, the figure in one open cell with the head breaking through the grid.</td></tr>
+</table>
+
 ## Notes
 
 Every preview is a real Ghostty window captured at the recommended opacity for its collection, placed over a procedurally generated sky. In use, your own wallpaper shows through instead; for the transparent themes, what appears in the glass and the openings depends entirely on your wallpaper.
@@ -311,7 +332,7 @@ Only tested with Ghostty 1.3.1 on macOS. The shaders assume two pixels per point
 ## Layout
 
 ```
-themes/        theme files, 49 of them
+themes/        theme files, 53 of them
 shaders/       bleed-measure / bleed-spread / bleed (ink bleed), diamond (diamond glass), watercolor (crayon watercolor)
 backgrounds/   images for the background and transparent themes, 3024×1964; the transparent ones are PNGs with alpha
 docs/          previews, cover and the ink bleed write-up

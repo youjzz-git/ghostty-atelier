@@ -1,0 +1,32 @@
+# Muse · Mucha (缪斯 · 穆夏)
+# After Mucha's "Byzantine Head: The Blonde": a jewelled medallion behind the figure, the hair
+# breaking over the ring, gold whiplash tendrils and poppies, a frieze of fans.
+# The cut-out follows a figure in one particular wallpaper, placed for a full-screen window. Set background-opacity = 0.5 in your config.
+background-image = ~/.config/ghostty/backgrounds/muse-mucha.png
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.9
+background = #0f1916
+foreground = #f2ebd9
+cursor-color = #dbb970
+cursor-text = #0f1916
+selection-background = #234539
+selection-foreground = #f2ebd9
+split-divider-color = #404b48
+
+palette = 0=#2b3633
+palette = 1=#f4a294
+palette = 2=#8bcd99
+palette = 3=#d8b66d
+palette = 4=#88c0f9
+palette = 5=#e6a1cf
+palette = 6=#62cfce
+palette = 7=#c8d4ce
+palette = 8=#738d81
+palette = 9=#fec4ba
+palette = 10=#afe4b9
+palette = 11=#edd198
+palette = 12=#b4d8ff
+palette = 13=#f9c0e5
+palette = 14=#93e5e4
+palette = 15=#eff7f3
